@@ -5,5 +5,5 @@
     <Bank Name="WStory" Player="1"/>
     <Bank Name="WArchive" Player="1"/>
     <Bank Name="TCampaign" Player="1"/>
-    <Bank Name="PStoryTransition" Player="1"/>
+    <Bank Name="TStoryTransition" Player="1"/>
 </BankList>
