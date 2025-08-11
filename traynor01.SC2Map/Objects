@@ -3,12 +3,12 @@
     <ObjectDoodad Id="2000" Position="67.5,41.5,7.9433" Rotation="3.311" Scale="1.0703,1.0703,1.0703" Type="MarSaraTreeDead">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1436120482" Variation="1" Position="93.5034,96.888,7.9277" Scale="1.0288,1.0288,1.0288" Type="RockSmall">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="989" Variation="2" Position="87.0378,116.241,7.9396" Scale="1,1,1" Type="ChainLinkFenceDiagonal">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="989" Variation="2" Position="87.0378,116.241,7.9396" Scale="1,1,1" Type="ChainLinkFenceDiagonal">
+    <ObjectDoodad Id="1436120482" Variation="1" Position="93.5034,96.888,7.9277" Scale="1.0288,1.0288,1.0288" Type="RockSmall">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -307,8 +307,10 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1075" Variation="5" Position="64,91,8.1401" Rotation="4.888" Scale="0.8642,0.8642,0.8642" Type="RockLarge">
+    <ObjectDoodad Id="1075" Variation="5" Position="63.478,91.1176,8.078" Rotation="4.888" Scale="0.8642,0.8642,0.8642" Type="RockLarge">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="2245" Variation="1" Position="102.561,87.0275,12.239" Rotation="1.2402" Scale="0.9057,0.9057,0.9057" Type="MarSaraSkeletonSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -409,7 +411,7 @@
     <ObjectDoodad Id="80" Variation="5" Position="37.5,30.5,8.6625" Rotation="4.631" Scale="0.8195,0.8195,0.8195" Type="Rock">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1117" Position="65.5,92.5,8.1137" Rotation="3.6225" Scale="1.1972,1.1972,1.1972" Type="Rock">
+    <ObjectDoodad Id="1117" Position="66.5,88.5,8.1523" Rotation="3.6225" Scale="1.1972,1.1972,1.1972" Type="Rock">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="6" Variation="8" Position="95.4797,29.67,8.1467" Rotation="5.3063" Scale="1.081,1.081,1.081" Type="Rock" TintColor="185,185,185">
@@ -807,6 +809,10 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1754283894" Position="65.9194,91.1477,8.17" Rotation="1.4223" Scale="1,1,1" Type="MiningBot">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="2071" Variation="2" Position="100.1745,124.8513,8.222" Scale="1.059,1.059,1.059" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -874,7 +880,8 @@
     <ObjectDoodad Id="806" Variation="4" Position="110.5,70.5,10.0722" Rotation="3.187" Scale="0.9074,0.9074,0.9074" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2085" Variation="19" Position="70.8598,96.6098,7.9414" Rotation="6.1328" Scale="1.0998,1.0998,1.0998" Type="SignsWarning">
+    <ObjectDoodad Id="2085" Variation="19" Position="68.3305,94.306,7.9602" Rotation="4.8674" Scale="1.3085,1.0998,1.272" Type="SignsWarning">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -1031,13 +1038,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1494963542" Variation="3" Position="76,81,11.9401" Rotation="0.4404" Scale="0.8176,0.8176,0.8176" Type="RockLarge">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="834" Variation="7" Position="44.5722,120.831,-0.0698" Rotation="3.0476" Scale="0.9045,0.9045,0.9045" Type="Rock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1494963542" Variation="3" Position="76,81,11.9401" Rotation="0.4404" Scale="0.8176,0.8176,0.8176" Type="RockLarge">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="230" Variation="9" Position="82.5,28.5,7.9858" Rotation="0.9328" Scale="0.9091,0.9091,0.9091" Type="Rock" TintColor="182,182,182">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1274,12 +1281,12 @@
     <ObjectDoodad Id="1292" Variation="1" Position="60.5,17.5,7.957" Rotation="1.1618" Scale="0.8662,0.8662,0.8662" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="512616549" Variation="9" Position="87.3117,83.9558,12.2985" Rotation="2.3046" Scale="1.0463,1.0463,1.0463" Type="Rock">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="2554" Variation="3" Position="77.4936,61.5231,9.931" Rotation="2.356" Scale="0.5,0.5,0.5" Type="Decal">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2554" Variation="3" Position="77.4936,61.5231,9.931" Rotation="2.356" Scale="0.5,0.5,0.5" Type="Decal">
+    <ObjectDoodad Id="512616549" Variation="9" Position="87.3117,83.9558,12.2985" Rotation="2.3046" Scale="1.0463,1.0463,1.0463" Type="Rock">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -1355,12 +1362,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2073696927" Variation="3" Position="98.0434,100.577,9.953" Rotation="4.3286" Scale="1.1733,1.1733,1.1733" Type="Rock">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1777" Variation="21" Position="44.9926,43.378,9.953" Rotation="0.7768" Scale="1,1.0998,1" Type="Decal">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1777" Variation="21" Position="44.9926,43.378,9.953" Rotation="0.7768" Scale="1,1.0998,1" Type="Decal">
+    <ObjectDoodad Id="2073696927" Variation="3" Position="98.0434,100.577,9.953" Rotation="4.3286" Scale="1.1733,1.1733,1.1733" Type="Rock">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -1460,13 +1467,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="2634" Position="42.9846,94.2985,8.0004" Scale="0.8261,0.8261,0.8261" Type="FireMedium">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1296745609" Variation="4" Position="74.3388,82.8786,12.1416" Rotation="2.8913" Scale="1.131,1.131,1.131" Type="Rock">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="2634" Position="42.9846,94.2985,8.0004" Scale="0.8261,0.8261,0.8261" Type="FireMedium">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1675" Position="64.761,52.7514,9.9438" Rotation="2.356" Scale="1,1,1" Type="MarSaraGroundProps">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1741,13 +1748,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="2447" Position="30.5656,69.0717,9.929" Scale="1,1,1" Type="WindEmitterBrownMedium">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1188877120" Variation="1" Position="84.313,87.9038,11.943" Scale="1.0288,1.0288,1.0288" Type="RockSmall">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="2447" Position="30.5656,69.0717,9.929" Scale="1,1,1" Type="WindEmitterBrownMedium">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1653" Variation="3" Position="47.7287,39.2641,9.9455" Rotation="1.3413" Scale="1.0874,1.0874,1.0874" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -1952,7 +1959,7 @@
     <ObjectDoodad Id="440" Position="73.5,72.5,9.9636" Rotation="1.2631" Scale="0.9831,0.9831,0.9831" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1461" Variation="4" Position="65.5,91.5,8.1684" Rotation="5.266" Scale="1.0378,1.0378,1.0378" Type="MarSaraTree">
+    <ObjectDoodad Id="1461" Variation="4" Position="65.5,89.5,8.182" Rotation="5.266" Scale="1.0378,1.0378,1.0378" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1663" Variation="5" Position="115.0541,42.6391,12.6245" Rotation="1.7985" Scale="1.1665,1.1665,1.1665" Type="MarSaraTree">
@@ -2053,12 +2060,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1937371443" Variation="2" Position="79.9877,84.0837,9.9282" Scale="1.059,1.059,1.059" Type="RockSmall">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1533" Variation="2" Position="35.1745,28.1394,8.0014" Scale="0.8674,0.8674,0.8674" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1533" Variation="2" Position="35.1745,28.1394,8.0014" Scale="0.8674,0.8674,0.8674" Type="RockSmall">
+    <ObjectDoodad Id="1937371443" Variation="2" Position="79.9877,84.0837,9.9282" Scale="1.059,1.059,1.059" Type="RockSmall">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -2221,7 +2228,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1622" Variation="1" Position="64.9868,91.099,8.1977" Scale="0.9526,0.9526,0.9526" Type="RockSmall">
+    <ObjectDoodad Id="1622" Variation="1" Position="64.9868,90.099,8.1213" Scale="0.9526,0.9526,0.9526" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -2465,21 +2472,18 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1723433184" Variation="6" Position="89.6914,91.6511,9.9484" Rotation="4.07" Scale="0.8315,0.8315,0.8315" Type="Rock">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1503" Variation="3" Position="58.0141,57.217,9.93" Rotation="2.352" Scale="1,1,1" Type="Decal">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1503" Variation="3" Position="58.0141,57.217,9.93" Rotation="2.352" Scale="1,1,1" Type="Decal">
+    <ObjectDoodad Id="1723433184" Variation="6" Position="89.6914,91.6511,9.9484" Rotation="4.07" Scale="0.8315,0.8315,0.8315" Type="Rock">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="466" Variation="3" Position="110.267,26.5585,7.9433" Rotation="3.6655" Scale="1.0607,1.0607,1.0607" Type="RockLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1460" Variation="4" Position="64.5,92.5,8.143" Rotation="4.0766" Scale="1.0861,1.0861,1.0861" Type="MarSaraTree">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="441" Variation="8" Position="108.5292,19.4912,8.081" Rotation="0.4958" Scale="0.9245,0.9245,0.9245" Type="Rock">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -4105,13 +4109,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="2122" Variation="6" Position="26.5,71.5,9.9282" Rotation="3.461" Scale="1.1418,1.1418,1.1418" Type="Rock">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
     <ObjectDoodad Id="1104255322" Variation="1" Position="67.9875,84.881,9.9653" Rotation="5.434" Scale="1.1552,1.1552,1.1552" Type="MarSaraTree">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="2122" Variation="6" Position="26.5,71.5,9.9282" Rotation="3.461" Scale="1.1418,1.1418,1.1418" Type="Rock">
-        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="2081" Variation="1" Position="104.6367,113.6706,10.5205" Rotation="0.7265" Scale="1.1552,1.1552,1.1552" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -4487,7 +4491,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="931" Position="62.7683,89.6796,8.127" Rotation="2.0773" Scale="0.8381,0.8381,0.8381" Type="MarSaraSkeletonLarge">
+    <ObjectDoodad Id="931" Position="62.1228,87.7692,8.0444" Rotation="2.0773" Scale="0.8381,0.8381,0.8381" Type="MarSaraSkeletonLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -4780,10 +4784,6 @@
     </ObjectDoodad>
     <ObjectDoodad Id="1119" Variation="4" Position="63.5,89.5,8.198" Rotation="2.286" Scale="0.956,0.956,0.956" Type="Rock">
         <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1076" Variation="5" Position="63.005,91.9995,8.099" Rotation="1.318" Scale="0.8474,0.8474,0.8474" Type="RockLarge">
-        <Flag Index="HeightAbsolute" Value="1"/>
-        <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="57" Variation="8" Position="52.5,111.5,7.952" Rotation="5.4975" Scale="1,1,1" Type="BillboardPropaganda">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -5283,6 +5283,7 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="219330132" Variation="8" Position="69.5261,95.1782,7.9392" Scale="1,1,1" Type="JarbanMinor_MiningSupplies"/>
     <ObjectDoodad Id="1165" Variation="1" Position="96.513,30.5405,8.261" Rotation="1.9433" Scale="1,1,1" Type="TRaynor02CranePart3x3">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -5366,7 +5367,7 @@
     <ObjectDoodad Id="882" Variation="1" Position="99.5,89.5,12.3691" Rotation="4.1755" Scale="0.9421,0.9421,0.9421" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1919" Variation="3" Position="64.5,89.5,8.1755" Rotation="0.0041" Scale="1.2978,1.2978,1.2978" Type="MarSaraCactus">
+    <ObjectDoodad Id="1919" Variation="3" Position="64.5,88.5,8.0698" Rotation="0.0041" Scale="1.2978,1.2978,1.2978" Type="MarSaraCactus">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1243" Variation="1" Position="107.5,14.5,9.9458" Rotation="4.84" Scale="1.1945,1.1945,1.1945" Type="Rock">
@@ -5553,12 +5554,12 @@
     <ObjectDoodad Id="1881" Position="35.5,61.5,9.929" Rotation="3.8781" Scale="1.2,1.2,1.2" Type="SignsWarning">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1791913771" Variation="2" Position="75.0507,81.179,11.937" Rotation="4.4765" Scale="1.059,1.059,1.059" Type="RockSmall">
+    <ObjectDoodad Id="1174" Position="65.2802,56.2121,9.8354" Rotation="1.152" Scale="1.45,1.45,1.45" Type="ColonistSandbagsCarried">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1174" Position="65.2802,56.2121,9.8354" Rotation="1.152" Scale="1.45,1.45,1.45" Type="ColonistSandbagsCarried">
+    <ObjectDoodad Id="1791913771" Variation="2" Position="75.0507,81.179,11.937" Rotation="4.4765" Scale="1.059,1.059,1.059" Type="RockSmall">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -6459,12 +6460,12 @@
     <ObjectDoodad Id="527" Position="63.5,20.5,7.934" Rotation="5.7473" Scale="1.469,1.469,1.469" Type="Rock">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1323256165" Variation="2" Position="89.7617,92.9301,9.9113" Scale="1.059,1.059,1.059" Type="RockSmall">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1538" Variation="10" Position="32.7592,43.9978,12.5427" Rotation="4.7233" Scale="0.8332,0.8332,0.8332" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1538" Variation="10" Position="32.7592,43.9978,12.5427" Rotation="4.7233" Scale="0.8332,0.8332,0.8332" Type="RockSmall">
+    <ObjectDoodad Id="1323256165" Variation="2" Position="89.7617,92.9301,9.9113" Scale="1.059,1.059,1.059" Type="RockSmall">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -6561,7 +6562,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1452" Variation="2" Position="63.1691,89.9768,8.145" Scale="1.059,1.059,1.059" Type="RockSmall">
+    <ObjectDoodad Id="1452" Variation="2" Position="64.0805,89.9768,8.1584" Scale="1.059,1.059,1.059" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -6712,12 +6713,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1564" Variation="7" Position="26.095,63.4191,-0.0715" Rotation="0.014" Scale="1.1723,1.1723,1.1723" Type="RockSmall">
+    <ObjectDoodad Id="1092509828" Position="93.6965,100.2285,8.0383" Rotation="2.3364" Scale="0.741,0.7143,1.0551" Type="ConstructionCrane">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1092509828" Position="93.6965,100.2285,8.0383" Rotation="2.3364" Scale="0.741,0.7143,1.0551" Type="ConstructionCrane">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1564" Variation="7" Position="26.095,63.4191,-0.0715" Rotation="0.014" Scale="1.1723,1.1723,1.1723" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -7012,6 +7013,7 @@
     <ObjectDoodad Id="1616" Variation="3" Position="89.8032,114.4638,7.9396" Rotation="1.6494" Scale="1.0383,1.0383,1.0383" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectDoodad Id="1246890330" Variation="1" Position="68.5,89.5,8.3881" Rotation="1.7377" Scale="1,1,1" Type="CargoTruck"/>
     <ObjectDoodad Id="605" Position="107.984,33.442,7.9194" Scale="1.1464,1.1464,1.1464" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
@@ -7057,12 +7059,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1263038678" Variation="3" Position="93.964,106.8732,7.9367" Rotation="4.3283" Scale="1.1733,1.1733,1.1733" Type="Rock">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="421" Position="107.9921,20.9416,7.9611" Rotation="3.2412" Scale="1.0683,1.0683,1.0683" Type="RockLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="421" Position="107.9921,20.9416,7.9611" Rotation="3.2412" Scale="1.0683,1.0683,1.0683" Type="RockLarge">
+    <ObjectDoodad Id="1263038678" Variation="3" Position="93.964,106.8732,7.9367" Rotation="4.3283" Scale="1.1733,1.1733,1.1733" Type="Rock">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -7116,7 +7118,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1453" Variation="2" Position="65.1938,90.3728,8.14" Scale="1.059,1.059,1.059" Type="RockSmall">
+    <ObjectDoodad Id="1453" Variation="2" Position="65.1938,89.3728,8.1274" Scale="1.059,1.059,1.059" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -7320,12 +7322,12 @@
     <ObjectDoodad Id="469" Variation="1" Position="48,120,7.93" Rotation="6.0231" Scale="1.0336,1.0336,1.0336" Type="RockLarge">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="2088365402" Variation="3" Position="93.9382,105.7617,7.9301" Rotation="0.4343" Scale="0.8176,0.8176,0.8176" Type="RockLarge">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1496" Variation="1" Position="69.5861,120.508,7.9387" Rotation="0.7827" Scale="1,1,1" Type="Decal">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1496" Variation="1" Position="69.5861,120.508,7.9387" Rotation="0.7827" Scale="1,1,1" Type="Decal">
+    <ObjectDoodad Id="2088365402" Variation="3" Position="93.9382,105.7617,7.9301" Rotation="0.4343" Scale="0.8176,0.8176,0.8176" Type="RockLarge">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -7333,7 +7335,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1459" Variation="4" Position="62.5,90.5,7.9995" Rotation="2.5998" Scale="0.862,0.862,0.862" Type="MarSaraTree">
+    <ObjectDoodad Id="1459" Variation="4" Position="62.5,89.5,8.0925" Rotation="2.5998" Scale="0.862,0.862,0.862" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="2418" Variation="2" Position="6.4086,78.1323,14.5505" Scale="1.059,1.059,1.059" Type="RockSmall">
@@ -7392,13 +7394,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="626683819" Position="85,86,11.9333" Rotation="2.2614" Scale="0.9421,0.9421,0.9421" Type="RockLarge">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="2373" Position="10.6896,50.7617,12.5895" Rotation="4.9973" Scale="1.0708,1.0708,1.0708" Type="MarSaraCactus">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="626683819" Position="85,86,11.9333" Rotation="2.2614" Scale="0.9421,0.9421,0.9421" Type="RockLarge">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="2350" Variation="2" Position="10.6948,58.6821,13.6335" Scale="1.059,1.059,1.059" Type="RockSmall">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -8545,13 +8547,13 @@
     <ObjectDoodad Id="800" Variation="1" Position="44,112,7.9333" Scale="1,1,1" Type="WreckedSandbags">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="720792108" Variation="6" Position="79.5,85.5,9.9414" Rotation="3.7358" Scale="0.85,0.85,0.85" Type="Rock">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="817" Variation="9" Position="29.8518,31.467,-0.0407" Rotation="3.9516" Scale="0.4538,0.4538,0.4538" Type="Rock">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="720792108" Variation="6" Position="79.5,85.5,9.9414" Rotation="3.7358" Scale="0.85,0.85,0.85" Type="Rock">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1879" Variation="3" Position="36.2905,62.4687,9.9313" Rotation="2.352" Scale="1,1,1" Type="Decal">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -8723,12 +8725,12 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="11645898" Variation="2" Position="75.1301,82.7585,12.009" Scale="1.059,1.059,1.059" Type="RockSmall">
-        <Flag Index="HeightOffset" Value="1"/>
+    <ObjectDoodad Id="1796" Variation="2" Position="42.9597,40.459,9.9548" Rotation="3.9372" Scale="1,1,1" Type="StoreFrontCityProps">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1796" Variation="2" Position="42.9597,40.459,9.9548" Rotation="3.9372" Scale="1,1,1" Type="StoreFrontCityProps">
+    <ObjectDoodad Id="11645898" Variation="2" Position="75.1301,82.7585,12.009" Scale="1.059,1.059,1.059" Type="RockSmall">
+        <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
@@ -9009,7 +9011,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1118" Variation="2" Position="65.5,90.5,8.1401" Rotation="5.3728" Scale="0.8334,0.8334,0.8334" Type="Rock">
+    <ObjectDoodad Id="1118" Variation="2" Position="65.5,88.5,8.0644" Rotation="5.3728" Scale="0.8334,0.8334,0.8334" Type="Rock">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="56" Variation="2" Position="29.16,40.88,0.2158" Rotation="0.6181" Scale="0.65,0.65,0.65" Type="RockFormationLarge">
@@ -9380,13 +9382,13 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectPoint Id="2676" Position="59.2753,102.7673,0" Rotation="2.4638" Scale="1,1,1" Type="Normal" Name="Briefing Transport Spawn 1" Color="0,0,0,0"/>
     <ObjectPoint Id="632" Position="53.7751,22.0795,0" Scale="1,1,1" Type="Normal" Name="Dogmeat Moveto 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="2676" Position="59.2753,102.7673,0" Rotation="2.4638" Scale="1,1,1" Type="Normal" Name="Briefing Transport Spawn 1" Color="0,0,0,0"/>
     <ObjectPoint Id="505" Position="36.3066,22.5166,0" Rotation="1.103" Scale="1,1,1" Type="Normal" Name="Start-Marine01A" Color="255,255,255,0"/>
+    <ObjectPoint Id="920" Position="50.585,98.879,0" Rotation="1.1437" Scale="1,1,1" Type="Normal" Name="Crowd02B" Color="255,0,128,255"/>
     <ObjectPoint Id="2270" Position="84.7724,64.3833,0" Rotation="4.3024" Scale="1,1,1" Type="Normal" Name="Intro02Civ09" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
-    <ObjectPoint Id="920" Position="50.585,98.879,0" Rotation="1.1437" Scale="1,1,1" Type="Normal" Name="Crowd02B" Color="255,0,128,255"/>
     <ObjectPoint Id="2439" Position="84.562,124.221,0" Scale="1,1,1" Type="Normal" Name="Briefing Crosshair" Color="0,0,0,0"/>
     <ObjectPoint Id="1155" Position="48.436,96.7534,0" Rotation="0.9914" Scale="1,1,1" Type="Normal" Name="Crowd02C" Color="255,0,128,255"/>
     <ObjectPoint Id="171" Position="56.9858,89.8767,0" Rotation="3.0988" Scale="1,1,1" Type="Normal" Name="VikingMove01" Color="255,255,255,0"/>
@@ -9401,19 +9403,19 @@
     <ObjectPoint Id="89" Position="88.951,54.4177,0" Scale="1,1,1" Type="Normal" Name="DropPodReady02" Color="255,128,255,255"/>
     <ObjectPoint Id="82" Position="67.9462,107.8066,0" Rotation="5.5463" Scale="1,1,1" Type="Normal" Name="FinalFightAttack01" Color="255,255,0,0"/>
     <ObjectPoint Id="888" Position="59.0798,90.5793,0" Rotation="4.001" Scale="1,1,1" Type="Normal" Name="Spawn01" Color="0,0,0,0"/>
-    <ObjectPoint Id="2719" Position="82.8024,26.33,0" Scale="1,1,1" Type="Normal" Name="Dogmeat Despawn" Color="0,0,0,0"/>
     <ObjectPoint Id="659" Position="98.4912,24.653,0" Rotation="5.4326" Scale="1,1,1" Type="Normal" Name="POINT - Roadblock" Color="0,0,0,0"/>
+    <ObjectPoint Id="2719" Position="82.8024,26.33,0" Scale="1,1,1" Type="Normal" Name="Dogmeat Despawn" Color="0,0,0,0"/>
     <ObjectPoint Id="1233" Position="75.369,64.233,0" Rotation="0.4916" Scale="1,1,1" Type="Normal" Name="Intro02Civ03" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
+    <ObjectPoint Id="918" Position="60.2304,92.696,0" Rotation="3.4511" Scale="1,1,1" Type="Normal" Name="Crowd01A" Color="255,0,128,255"/>
     <ObjectPoint Id="2256" Position="85.293,72.31,0" Rotation="5.706" Scale="1,1,1" Type="Normal" Name="Intro02Marine01" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
-    <ObjectPoint Id="918" Position="60.2304,92.696,0" Rotation="3.4511" Scale="1,1,1" Type="Normal" Name="Crowd01A" Color="255,0,128,255"/>
-    <ObjectPoint Id="960" Position="59.9748,48.934,0" Rotation="3.2707" Scale="1,1,1" Type="Normal" Name="VikingIntroCreate03" Color="255,255,255,0"/>
     <ObjectPoint Id="613" Position="90.8166,75.927,0" Rotation="5.5168" Scale="1,1,1" Type="Normal" Name="Intro02Viking02" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
+    <ObjectPoint Id="960" Position="59.9748,48.934,0" Rotation="3.2707" Scale="1,1,1" Type="Normal" Name="VikingIntroCreate03" Color="255,255,255,0"/>
     <ObjectPoint Id="111" Position="58.052,50.421,0" Rotation="2.783" Scale="1,1,1" Type="Normal" Name="VikingIntroCreate02" Color="255,255,255,0"/>
     <ObjectPoint Id="732" Position="72.5,14.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location P2_DOMINION" Color="0,0,0,0"/>
     <ObjectPoint Id="953" Position="65.551,61.7814,0" Rotation="1.7714" Scale="1,1,1" Type="Normal" Name="RiksvilleAttack01" Color="255,255,0,0"/>
@@ -9421,8 +9423,8 @@
     <ObjectPoint Id="2266" Position="71.9064,106.0244,0" Rotation="5.565" Scale="1,1,1" Type="Normal" Name="Intro01Mar04" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
-    <ObjectPoint Id="2335" Position="82.16,122.2597,0" Rotation="5.4975" Scale="1,1,1" Type="Normal" Name="Victory - Raynor Start" Color="0,0,0,0"/>
     <ObjectPoint Id="1020" Position="33.761,23.3164,0" Rotation="1.216" Scale="1,1,1" Type="Normal" Name="Start-Marine06A" Color="255,255,255,0"/>
+    <ObjectPoint Id="2335" Position="82.16,122.2597,0" Rotation="5.4975" Scale="1,1,1" Type="Normal" Name="Victory - Raynor Start" Color="0,0,0,0"/>
     <ObjectPoint Id="2271" Position="73.9636,53.102,0" Rotation="2.4455" Scale="1,1,1" Type="Normal" Name="Intro02Bik01" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
@@ -9470,11 +9472,11 @@
     </ObjectPoint>
     <ObjectPoint Id="2717" Position="100.48,28.63,0" Scale="1,1,1" Type="Normal" Name="RoadBlockBrutalMarine" Color="0,0,0,0"/>
     <ObjectPoint Id="379" Position="22.588,33.196,0" Rotation="1.4873" Scale="1,1,1" Type="Normal" Name="Start-Dropship01A" Color="255,0,128,255"/>
-    <ObjectPoint Id="2614" Position="54.96,55.8298,0" Rotation="1.769" Scale="1,1,1" Type="Normal" Name="RiksvilleAttack02" Color="255,255,0,0"/>
+    <ObjectPoint Id="927" Position="47.42,93.8698,0" Rotation="0.7954" Scale="1,1,1" Type="Normal" Name="Crowd03B" Color="255,0,128,255"/>
     <ObjectPoint Id="2265" Position="66.1408,112.2431,0" Rotation="5.3295" Scale="1,1,1" Type="Normal" Name="Intro01Mar03" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
-    <ObjectPoint Id="927" Position="47.42,93.8698,0" Rotation="0.7954" Scale="1,1,1" Type="Normal" Name="Crowd03B" Color="255,0,128,255"/>
+    <ObjectPoint Id="2614" Position="54.96,55.8298,0" Rotation="1.769" Scale="1,1,1" Type="Normal" Name="RiksvilleAttack02" Color="255,255,0,0"/>
     <ObjectPoint Id="2680" Position="77.2666,114.159,0" Rotation="2.4614" Scale="1,1,1" Type="Normal" Name="Briefing Transport Move 2" Color="0,0,0,0"/>
     <ObjectPoint Id="350" Position="76.5812,120.458,0" Rotation="5.456" Scale="1,1,1" Type="Normal" Name="FinalVikingTransform01" Color="0,0,0,0"/>
     <ObjectPoint Id="890" Position="48.8713,98.3447,0" Rotation="0.9184" Scale="1,1,1" Type="Normal" Name="Spawn02" Color="0,0,0,0"/>
@@ -9489,21 +9491,21 @@
     <ObjectPoint Id="1093" Position="77.6916,66.986,0" Rotation="1.864" Scale="1,1,1" Type="Normal" Name="Intro02Civ01" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
-    <ObjectPoint Id="2615" Position="60.66,61.3098,0" Rotation="1.0498" Scale="1,1,1" Type="Normal" Name="RiksvilleAttack04" Color="255,255,0,0"/>
+    <ObjectPoint Id="926" Position="51.9887,97.8923,0" Rotation="0.7495" Scale="1,1,1" Type="Normal" Name="Crowd02A" Color="255,0,128,255"/>
     <ObjectPoint Id="2264" Position="79.24,117.8242,0" Rotation="5.5373" Scale="1,1,1" Type="Normal" Name="Intro01Mar02" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
-    <ObjectPoint Id="926" Position="51.9887,97.8923,0" Rotation="0.7495" Scale="1,1,1" Type="Normal" Name="Crowd02A" Color="255,0,128,255"/>
-    <ObjectPoint Id="891" Position="46.5798,95.9,0" Rotation="1.0441" Scale="1,1,1" Type="Normal" Name="Spawn03" Color="0,0,0,0"/>
-    <ObjectPoint Id="734" Position="62.5,14.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location P3_COLONISTS" Color="0,0,0,0"/>
+    <ObjectPoint Id="2615" Position="60.66,61.3098,0" Rotation="1.0498" Scale="1,1,1" Type="Normal" Name="RiksvilleAttack04" Color="255,255,0,0"/>
     <ObjectPoint Id="49" Position="67.5,16.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location P1_USER" Color="0,0,0,0"/>
-    <ObjectPoint Id="415" Position="36.2851,23.692,0" Rotation="1.1618" Scale="1,1,1" Type="Normal" Name="Start-Marine02A" Color="255,255,255,0"/>
+    <ObjectPoint Id="734" Position="62.5,14.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location P3_COLONISTS" Color="0,0,0,0"/>
+    <ObjectPoint Id="891" Position="46.5798,95.9,0" Rotation="1.0441" Scale="1,1,1" Type="Normal" Name="Spawn03" Color="0,0,0,0"/>
     <ObjectPoint Id="58" Position="85.74,51.7885,0" Scale="1,1,1" Type="Normal" Name="DropPodReady01" Color="255,128,255,255"/>
-    <ObjectPoint Id="2269" Position="78.8151,57.4055,0" Rotation="3.0646" Scale="1,1,1" Type="Normal" Name="Intro02Civ08" Color="255,0,0,255">
+    <ObjectPoint Id="415" Position="36.2851,23.692,0" Rotation="1.1618" Scale="1,1,1" Type="Normal" Name="Start-Marine02A" Color="255,255,255,0"/>
+    <ObjectPoint Id="923" Position="55.994,56.6425,0" Rotation="5.4462" Scale="1,1,1" Type="Normal" Name="Intro02Viking01Move02" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
     <ObjectPoint Id="1949" Position="64.8203,57.0434,0" Rotation="1.7697" Scale="1,1,1" Type="Normal" Name="RiksvilleAttack03" Color="255,255,0,0"/>
-    <ObjectPoint Id="923" Position="55.994,56.6425,0" Rotation="5.4462" Scale="1,1,1" Type="Normal" Name="Intro02Viking01Move02" Color="255,0,0,255">
+    <ObjectPoint Id="2269" Position="78.8151,57.4055,0" Rotation="3.0646" Scale="1,1,1" Type="Normal" Name="Intro02Civ08" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
     <ObjectPoint Id="113" Position="62.5527,61.7465,0" Scale="1,1,1" Type="Normal" Name="DropPodDrop01" Color="255,128,255,255"/>
@@ -9515,18 +9517,18 @@
     <ObjectPoint Id="885" Position="34.8356,24.6027,0" Rotation="1.1594" Scale="1,1,1" Type="Normal" Name="Start-Marine05A" Color="255,255,255,0"/>
     <ObjectPoint Id="2679" Position="73.9448,117.5664,0" Rotation="2.4626" Scale="1,1,1" Type="Normal" Name="Briefing Transport Move 1" Color="0,0,0,0"/>
     <ObjectPoint Id="1038" Position="19.2873,15.74,0" Rotation="5.77" Scale="1,1,1" Type="Normal" Name="Start-Dropship02" Color="0,0,0,0"/>
+    <ObjectPoint Id="905" Position="35.613,77.854,0" Rotation="5.6044" Scale="1,1,1" Type="Normal" Name="GreatEscapeMove01" Color="255,0,255,0"/>
     <ObjectPoint Id="2255" Position="89.1098,69.0683,0" Rotation="5.1064" Scale="1,1,1" Type="Normal" Name="Intro02Civ06" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
-    <ObjectPoint Id="905" Position="35.613,77.854,0" Rotation="5.6044" Scale="1,1,1" Type="Normal" Name="GreatEscapeMove01" Color="255,0,255,0"/>
+    <ObjectPoint Id="1603395795" Position="33.73,24.44,0" Rotation="1.216" Scale="1,1,1" Type="Normal" Name="Start-Medic01A" Color="255,255,255,0"/>
     <ObjectPoint Id="1230" Position="76.1142,66.6076,0" Rotation="0.5832" Scale="1,1,1" Type="Normal" Name="Intro02Civ02" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
-    <ObjectPoint Id="1603395795" Position="33.73,24.44,0" Rotation="1.216" Scale="1,1,1" Type="Normal" Name="Start-Medic01A" Color="255,255,255,0"/>
     <ObjectPoint Id="2177" Position="63.4235,59.1953,0" Rotation="1.7697" Scale="1,1,1" Type="Normal" Name="RiksvilleReinforceAttack" Color="255,255,0,0"/>
-    <ObjectPoint Id="1152" Position="57.18,91.67,0" Rotation="4.001" Scale="1,1,1" Type="Normal" Name="Crowd01C" Color="255,0,128,255"/>
-    <ObjectPoint Id="972" Position="94.8215,62.2197,0" Scale="1,1,1" Type="SoundEmitter" Name="Sound Emitter 001" Color="0,0,0,0" Sound="Emitter_Raynor01Shutters"/>
     <ObjectPoint Id="134" Position="56.428,48.9865,0" Rotation="2.5781" Scale="1,1,1" Type="Normal" Name="VikingIntroCreate01" Color="255,255,255,0"/>
+    <ObjectPoint Id="972" Position="94.8215,62.2197,0" Scale="1,1,1" Type="SoundEmitter" Name="Sound Emitter 001" Color="0,0,0,0" Sound="Emitter_Raynor01Shutters"/>
+    <ObjectPoint Id="1152" Position="57.18,91.67,0" Rotation="4.001" Scale="1,1,1" Type="Normal" Name="Crowd01C" Color="255,0,128,255"/>
     <ObjectPoint Id="70" Position="88.2866,71.1052,0" Rotation="5.4052" Scale="1,1,1" Type="Normal" Name="Intro02Marine02" Color="255,0,0,255">
         <Flag Index="PointHidden" Value="1"/>
     </ObjectPoint>
@@ -9593,19 +9595,6 @@
         <CameraValue Index="FalloffStart" Value="3"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
-    <ObjectCamera Id="1977" Position="56.85,52.6076,0" Rotation="3.2983" Scale="1,1,1" Name="MidCinTownCenter01" Color="255,255,0,0" CameraTarget="56.85,52.6076">
-        <CameraValue Index="FieldOfView" Value="27.2998"/>
-        <CameraValue Index="NearClip" Value="0.0998"/>
-        <CameraValue Index="FarClip" Value="100000"/>
-        <CameraValue Index="ShadowClip" Value="75"/>
-        <CameraValue Index="Distance" Value="8.3674"/>
-        <CameraValue Index="Pitch" Value="26.438"/>
-        <CameraValue Index="Yaw" Value="188.981"/>
-        <CameraValue Index="HeightOffset" Value="5.417"/>
-        <CameraValue Index="FocalDepth" Value="8"/>
-        <CameraValue Index="FalloffStart" Value="3"/>
-        <CameraValue Index="FalloffEnd" Value="8"/>
-    </ObjectCamera>
     <ObjectCamera Id="206" Position="57.8637,98.5087,0" Rotation="2.321" Scale="1,1,1" Name="Briefing01_03" Color="255,0,0,255" CameraTarget="57.8637,98.5087">
         <CameraValue Index="FieldOfView" Value="27.2995"/>
         <CameraValue Index="NearClip" Value="0.0998"/>
@@ -9615,6 +9604,19 @@
         <CameraValue Index="Pitch" Value="8.2797"/>
         <CameraValue Index="Yaw" Value="132.986"/>
         <CameraValue Index="HeightOffset" Value="6.0634"/>
+        <CameraValue Index="FocalDepth" Value="8"/>
+        <CameraValue Index="FalloffStart" Value="3"/>
+        <CameraValue Index="FalloffEnd" Value="8"/>
+    </ObjectCamera>
+    <ObjectCamera Id="1977" Position="56.85,52.6076,0" Rotation="3.2983" Scale="1,1,1" Name="MidCinTownCenter01" Color="255,255,0,0" CameraTarget="56.85,52.6076">
+        <CameraValue Index="FieldOfView" Value="27.2998"/>
+        <CameraValue Index="NearClip" Value="0.0998"/>
+        <CameraValue Index="FarClip" Value="100000"/>
+        <CameraValue Index="ShadowClip" Value="75"/>
+        <CameraValue Index="Distance" Value="8.3674"/>
+        <CameraValue Index="Pitch" Value="26.438"/>
+        <CameraValue Index="Yaw" Value="188.981"/>
+        <CameraValue Index="HeightOffset" Value="5.417"/>
         <CameraValue Index="FocalDepth" Value="8"/>
         <CameraValue Index="FalloffStart" Value="3"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
@@ -9667,27 +9669,14 @@
         <CameraValue Index="FalloffStart" Value="3"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
-    <ObjectCamera Id="1013" Position="75.8361,61.6806,0" Rotation="1.986" Scale="1,1,1" Name="Briefing02_02" Color="255,0,0,255" CameraTarget="75.8361,61.6806">
+    <ObjectCamera Id="1013" Position="75.8361,61.6806,0" Rotation="1.9858" Scale="1,1,1" Name="Briefing02_02" Color="255,0,0,255" CameraTarget="75.8361,61.6806">
         <CameraValue Index="FieldOfView" Value="27.2995"/>
         <CameraValue Index="NearClip" Value="0.0998"/>
         <CameraValue Index="FarClip" Value="100000"/>
         <CameraValue Index="ShadowClip" Value="75"/>
         <CameraValue Index="Distance" Value="21.5551"/>
         <CameraValue Index="Pitch" Value="18.5598"/>
-        <CameraValue Index="Yaw" Value="113.808"/>
-        <CameraValue Index="HeightOffset" Value="1.244"/>
-        <CameraValue Index="FocalDepth" Value="8"/>
-        <CameraValue Index="FalloffStart" Value="3"/>
-        <CameraValue Index="FalloffEnd" Value="8"/>
-    </ObjectCamera>
-    <ObjectCamera Id="2132" Position="71.9401,59.8754,0" Rotation="1.986" Scale="1,1,1" Name="Briefing02_03" Color="255,0,0,255" CameraTarget="71.9401,59.8754">
-        <CameraValue Index="FieldOfView" Value="27.2995"/>
-        <CameraValue Index="NearClip" Value="0.0998"/>
-        <CameraValue Index="FarClip" Value="100000"/>
-        <CameraValue Index="ShadowClip" Value="75"/>
-        <CameraValue Index="Distance" Value="21.0307"/>
-        <CameraValue Index="Pitch" Value="18.5598"/>
-        <CameraValue Index="Yaw" Value="113.808"/>
+        <CameraValue Index="Yaw" Value="113.7941"/>
         <CameraValue Index="HeightOffset" Value="1.244"/>
         <CameraValue Index="FocalDepth" Value="8"/>
         <CameraValue Index="FalloffStart" Value="3"/>
@@ -9706,15 +9695,15 @@
         <CameraValue Index="FalloffStart" Value="3"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
-    <ObjectCamera Id="1703" Position="39.1984,81.304,0" Rotation="3.036" Scale="1,1,1" Name="MidCinEscape02" Color="255,255,0,0" CameraTarget="39.1984,81.304">
-        <CameraValue Index="FieldOfView" Value="27.2998"/>
+    <ObjectCamera Id="2132" Position="71.9401,59.8754,0" Rotation="1.9858" Scale="1,1,1" Name="Briefing02_03" Color="255,0,0,255" CameraTarget="71.9401,59.8754">
+        <CameraValue Index="FieldOfView" Value="27.2995"/>
         <CameraValue Index="NearClip" Value="0.0998"/>
         <CameraValue Index="FarClip" Value="100000"/>
         <CameraValue Index="ShadowClip" Value="75"/>
-        <CameraValue Index="Distance" Value="16.1044"/>
-        <CameraValue Index="Pitch" Value="25.4184"/>
-        <CameraValue Index="Yaw" Value="173.9436"/>
-        <CameraValue Index="HeightOffset" Value="0.098"/>
+        <CameraValue Index="Distance" Value="21.0307"/>
+        <CameraValue Index="Pitch" Value="18.5598"/>
+        <CameraValue Index="Yaw" Value="113.7941"/>
+        <CameraValue Index="HeightOffset" Value="1.244"/>
         <CameraValue Index="FocalDepth" Value="8"/>
         <CameraValue Index="FalloffStart" Value="3"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
@@ -9732,6 +9721,19 @@
         <CameraValue Index="FalloffStart" Value="3"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
+    <ObjectCamera Id="1703" Position="39.1984,81.304,0" Rotation="3.036" Scale="1,1,1" Name="MidCinEscape02" Color="255,255,0,0" CameraTarget="39.1984,81.304">
+        <CameraValue Index="FieldOfView" Value="27.2998"/>
+        <CameraValue Index="NearClip" Value="0.0998"/>
+        <CameraValue Index="FarClip" Value="100000"/>
+        <CameraValue Index="ShadowClip" Value="75"/>
+        <CameraValue Index="Distance" Value="16.1044"/>
+        <CameraValue Index="Pitch" Value="25.4184"/>
+        <CameraValue Index="Yaw" Value="173.9436"/>
+        <CameraValue Index="HeightOffset" Value="0.098"/>
+        <CameraValue Index="FocalDepth" Value="8"/>
+        <CameraValue Index="FalloffStart" Value="3"/>
+        <CameraValue Index="FalloffEnd" Value="8"/>
+    </ObjectCamera>
     <ObjectCamera Id="168" Position="61.107,54.4934,0" Rotation="3.877" Scale="1,1,1" Name="MidCinTownCenter02" Color="255,255,0,0" CameraTarget="61.107,54.4934">
         <CameraValue Index="FieldOfView" Value="27.2998"/>
         <CameraValue Index="NearClip" Value="0.0998"/>
@@ -9745,14 +9747,14 @@
         <CameraValue Index="FalloffStart" Value="3"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
-    <ObjectCamera Id="2273" Position="84.3073,127.7778,0" Rotation="3.125" Scale="1,1,1" Name="Briefing03_01" Color="255,0,0,255" CameraTarget="84.3073,127.7778">
+    <ObjectCamera Id="160" Position="101.8432,38.9343,0" Rotation="3.14" Scale="1,1,1" Name="MidBillboard Return" Color="0,0,0,0" CameraTarget="101.8432,38.9343">
         <CameraValue Index="FieldOfView" Value="27.7995"/>
         <CameraValue Index="NearClip" Value="0.0998"/>
         <CameraValue Index="FarClip" Value="400"/>
         <CameraValue Index="ShadowClip" Value="75"/>
-        <CameraValue Index="Distance" Value="34.859"/>
-        <CameraValue Index="Pitch" Value="36.7807"/>
-        <CameraValue Index="Yaw" Value="179.0493"/>
+        <CameraValue Index="Distance" Value="34"/>
+        <CameraValue Index="Pitch" Value="56"/>
+        <CameraValue Index="Yaw" Value="179.9025"/>
         <CameraValue Index="FocalDepth" Value="8"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
@@ -9769,14 +9771,14 @@
         <CameraValue Index="FalloffStart" Value="3"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
-    <ObjectCamera Id="160" Position="101.8432,38.9343,0" Rotation="3.14" Scale="1,1,1" Name="MidBillboard Return" Color="0,0,0,0" CameraTarget="101.8432,38.9343">
+    <ObjectCamera Id="2273" Position="84.3073,127.7778,0" Rotation="3.125" Scale="1,1,1" Name="Briefing03_01" Color="255,0,0,255" CameraTarget="84.3073,127.7778">
         <CameraValue Index="FieldOfView" Value="27.7995"/>
         <CameraValue Index="NearClip" Value="0.0998"/>
         <CameraValue Index="FarClip" Value="400"/>
         <CameraValue Index="ShadowClip" Value="75"/>
-        <CameraValue Index="Distance" Value="34"/>
-        <CameraValue Index="Pitch" Value="56"/>
-        <CameraValue Index="Yaw" Value="179.9025"/>
+        <CameraValue Index="Distance" Value="34.859"/>
+        <CameraValue Index="Pitch" Value="36.7807"/>
+        <CameraValue Index="Yaw" Value="179.0493"/>
         <CameraValue Index="FocalDepth" Value="8"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
@@ -9825,19 +9827,19 @@
         <AIActive Index="2" Value="0"/>
         <AIActive Index="3" Value="0"/>
     </ObjectUnit>
-    <ObjectUnit Id="315" Position="97.8276,70.158,0" Rotation="1.223" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="158" Position="84.5,124.5,0" Rotation="5.4975" Scale="1,1,1" UnitType="LogisticsHeadquarters" Player="2"/>
+    <ObjectUnit Id="315" Position="97.8276,70.158,0" Rotation="1.223" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="185" Position="77.43,117.3398,0" Rotation="5.2895" Scale="1,1,1" UnitType="Marine" Player="2">
         <AIActive Index="2" Value="0"/>
         <AIActive Index="4" Value="0"/>
     </ObjectUnit>
     <ObjectUnit Id="788" Position="62.45,64.21,0" Rotation="0.3666" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="2035763683" Position="39.0266,45.8032,0" Rotation="1.8237" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="871586507" Position="38.1662,45.0195,0" Rotation="1.8237" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="105" Position="62,117,0" Rotation="0.8095" Scale="1,1,1" UnitType="MengskStatue" Player="2"/>
-    <ObjectUnit Id="932" Position="60.42,56.7897,0" Rotation="1.618" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="238" Position="100.2604,27.6066,0" Rotation="5.8508" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="871586507" Position="38.1662,45.0195,0" Rotation="1.8237" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="331" Position="44.6254,86.0815,0" Rotation="2.3623" Scale="1,1,1" UnitType="ColonistTransport" Player="2"/>
+    <ObjectUnit Id="238" Position="100.2604,27.6066,0" Rotation="5.8508" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="932" Position="60.42,56.7897,0" Rotation="1.618" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="892099494" Position="91.69,96.3398,0" Rotation="5.3771" Scale="1,1,1" UnitType="Marine" Player="2">
         <AIActive Index="1" Value="0"/>
         <AIActive Index="2" Value="0"/>
@@ -9850,16 +9852,16 @@
         <AIActive Index="2" Value="0"/>
     </ObjectUnit>
     <ObjectUnit Id="2309" Position="66.3017,120.3088,0" Rotation="2.9072" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="32" Position="37.008,42.5097,0" Rotation="1.3037" Scale="1,1,1" UnitType="MengskHologramBillboard">
-        <Flag Index="ForcePlacement" Value="1"/>
-    </ObjectUnit>
     <ObjectUnit Id="719" Position="70.153,124.5651,0" Rotation="5.9704" Scale="1,1,1" UnitType="Civilian" Player="3">
         <Texture TexSlot="main" TexProps="male,helmet" TexLink=""/>
     </ObjectUnit>
-    <ObjectUnit Id="43" Variation="1" Position="79.5673,25.588,0" Rotation="4.4392" Scale="1,1,1" UnitType="CivilianFemale" Player="5"/>
+    <ObjectUnit Id="32" Position="37.008,42.5097,0" Rotation="1.3037" Scale="1,1,1" UnitType="MengskHologramBillboard">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
     <ObjectUnit Id="909" Variation="1" Position="39.367,80.929,0" Rotation="2.3564" Scale="1,1,1" UnitType="Civilian" Player="3">
         <Texture TexSlot="main" TexProps="male,helmet,01" TexLink=""/>
     </ObjectUnit>
+    <ObjectUnit Id="43" Variation="1" Position="79.5673,25.588,0" Rotation="4.4392" Scale="1,1,1" UnitType="CivilianFemale" Player="5"/>
     <ObjectUnit Id="1320" Position="48.4223,57.4702,0" Rotation="1.825" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="2703" Position="96.5571,68.6447,0" Rotation="0.6354" Scale="1,1,1" UnitType="Marine" Player="2">
         <AIActive Index="1" Value="0"/>
@@ -9871,9 +9873,9 @@
         <AIActive Index="1" Value="0"/>
     </ObjectUnit>
     <ObjectUnit Id="110" Position="74.5,104.5,0" Rotation="5.4235" Scale="1.0998,1.0998,1.0998" UnitType="MengskStatueAlone" Player="2"/>
-    <ObjectUnit Id="2694" Position="62,95,0" Rotation="5.4602" Scale="1,1,1" UnitType="MengskHologramBillboard"/>
-    <ObjectUnit Id="2336" Position="65.204,59.5134,0" Rotation="1.1264" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="1833" Position="70.5014,44.4863,0" Rotation="0.528" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="2336" Position="65.204,59.5134,0" Rotation="1.1264" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="2694" Position="62,95,0" Rotation="5.4602" Scale="1,1,1" UnitType="MengskHologramBillboard"/>
     <ObjectUnit Id="2169" Position="42.111,83.187,0" Rotation="2.447" Scale="1,1,1" UnitType="Civilian" Player="3">
         <Texture TexSlot="main" TexProps="male,helmet,01" TexLink=""/>
     </ObjectUnit>
@@ -9881,28 +9883,28 @@
     <ObjectUnit Id="1945" Variation="2" Position="42.5234,83.5415,0" Rotation="2.4768" Scale="1,1,1" UnitType="Civilian" Player="3">
         <Texture TexSlot="main" TexProps="male,helmet,02" TexLink=""/>
     </ObjectUnit>
-    <ObjectUnit Id="1063388834" Position="43.3142,80.7658,0" Rotation="5.0856" Scale="1,1,1" UnitType="Marauder" Player="2"/>
     <ObjectUnit Id="2675" Position="57.6198,68.5698,0" Rotation="0.9138" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="2171" Variation="1" Position="42.0288,83.9006,0" Rotation="2.5156" Scale="1,1,1" UnitType="CivilianFemale" Player="3"/>
+    <ObjectUnit Id="1063388834" Position="43.3142,80.7658,0" Rotation="5.0856" Scale="1,1,1" UnitType="Marauder" Player="2"/>
     <ObjectUnit Id="628" Position="67.6213,125.8757,0" Scale="1,1,1" UnitType="Civilian" Player="3">
         <Texture TexSlot="main" TexProps="male,02" TexLink=""/>
     </ObjectUnit>
-    <ObjectUnit Id="911169398" Position="76.8198,118.41,0" Rotation="5.4448" Scale="1,1,1" UnitType="Medic" Player="2"/>
+    <ObjectUnit Id="2171" Variation="1" Position="42.0288,83.9006,0" Rotation="2.5156" Scale="1,1,1" UnitType="CivilianFemale" Player="3"/>
     <ObjectUnit Id="1790" Variation="1" Position="40.1096,82.331,0" Rotation="2.32" Scale="1,1,1" UnitType="CivilianFemale" Player="3"/>
-    <ObjectUnit Id="59" Position="101.998,28.0727,0" Rotation="5.5773" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="911169398" Position="76.8198,118.41,0" Rotation="5.4448" Scale="1,1,1" UnitType="Medic" Player="2"/>
     <ObjectUnit Id="925" Variation="1" Position="41.2587,82.508,0" Rotation="2.448" Scale="1,1,1" UnitType="Civilian" Player="3">
         <Texture TexSlot="main" TexProps="male,helmet,03" TexLink=""/>
     </ObjectUnit>
+    <ObjectUnit Id="59" Position="101.998,28.0727,0" Rotation="5.5773" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="785" Position="61.69,63.2,0" Rotation="1.278" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="611471937" Position="38.3793,46.9897,0" Rotation="1.357" Scale="1,1,1" UnitType="Ghost" Player="2">
         <AIActive Index="1" Value="0"/>
         <AIActive Index="2" Value="0"/>
     </ObjectUnit>
-    <ObjectUnit Id="785" Position="61.69,63.2,0" Rotation="1.278" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="457718584" Position="39.3908,47.0786,0" Rotation="1.8237" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="1834" Position="70.6166,45.3547,0" Rotation="1.2182" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="1604173138" Position="90.17,98.2797,0" Rotation="5.7316" Scale="1,1,1" UnitType="Diamondback" Player="2"/>
-    <ObjectUnit Id="1615" Position="37.4243,80.46,0" Rotation="5.8447" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="677" Variation="1" Position="69.4826,123.773,0" Scale="1,1,1" UnitType="Civilian" Player="3"/>
+    <ObjectUnit Id="1615" Position="37.4243,80.46,0" Rotation="5.8447" Scale="1,1,1" UnitType="Marine" Player="2"/>
     <ObjectUnit Id="2440" Position="76.1857,116.3325,0" Rotation="5.5625" Scale="1,1,1" UnitType="Firebat" Player="2">
         <AIActive Index="1" Value="0"/>
         <AIActive Index="2" Value="0"/>
@@ -9911,22 +9913,22 @@
     <ObjectUnit Id="207" Position="68.6472,48.9311,0" Rotation="5.609" Scale="1,1,1" UnitType="MengskHologramBillboard">
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectUnit>
-    <ObjectUnit Id="1613" Position="44.88,84,0" Rotation="5.222" Scale="1,1,1" UnitType="Marine" Player="2">
-        <AIActive Index="1" Value="0"/>
-    </ObjectUnit>
     <ObjectUnit Id="1102" Variation="1" Position="40.6413,81.953,0" Rotation="2.4606" Scale="1,1,1" UnitType="Civilian" Player="3">
         <Texture TexSlot="main" TexProps="male,helmet,02" TexLink=""/>
     </ObjectUnit>
+    <ObjectUnit Id="1613" Position="44.88,84,0" Rotation="5.222" Scale="1,1,1" UnitType="Marine" Player="2">
+        <AIActive Index="1" Value="0"/>
+    </ObjectUnit>
+    <ObjectUnit Id="1968438346" Position="90.0593,98.1665,0" Rotation="6.141" Scale="1,1,1" UnitType="Raven" Player="2"/>
     <ObjectUnit Id="1782" Position="40.085,81.6584,0" Rotation="2.4125" Scale="1,1,1" UnitType="Civilian" Player="3">
         <Texture TexSlot="main" TexProps="male,backpack,01" TexLink=""/>
     </ObjectUnit>
-    <ObjectUnit Id="1968438346" Position="90.0593,98.1665,0" Rotation="6.141" Scale="1,1,1" UnitType="Raven" Player="2"/>
-    <ObjectUnit Id="2716" Position="69.6198,45.44,0" Rotation="1.2175" Scale="1,1,1" UnitType="Marine" Player="2">
+    <ObjectUnit Id="2672" Position="43.8476,82.5021,0" Rotation="5.4257" Scale="1,1,1" UnitType="Marine" Player="2">
         <AIActive Index="1" Value="0"/>
         <AIActive Index="2" Value="0"/>
         <AIActive Index="3" Value="0"/>
     </ObjectUnit>
-    <ObjectUnit Id="2672" Position="43.8476,82.5021,0" Rotation="5.4257" Scale="1,1,1" UnitType="Marine" Player="2">
+    <ObjectUnit Id="2716" Position="69.6198,45.44,0" Rotation="1.2175" Scale="1,1,1" UnitType="Marine" Player="2">
         <AIActive Index="1" Value="0"/>
         <AIActive Index="2" Value="0"/>
         <AIActive Index="3" Value="0"/>
@@ -9957,11 +9959,11 @@
         <AIActive Index="2" Value="0"/>
     </ObjectUnit>
     <ObjectUnit Id="1617" Position="42.13,86.24,0" Rotation="0.2136" Scale="1,1,1" UnitType="Marine" Player="2"/>
-    <ObjectUnit Id="1074" Position="41.6711,82.8625,0" Rotation="2.4777" Scale="1,1,1" UnitType="Civilian" Player="3">
-        <Texture TexSlot="main" TexProps="male,01" TexLink=""/>
-    </ObjectUnit>
     <ObjectUnit Id="216" Variation="1" Position="42.8398,84.178,0" Rotation="2.67" Scale="1,1,1" UnitType="Civilian" Player="3">
         <Texture TexSlot="main" TexProps="male,backpack,02" TexLink=""/>
+    </ObjectUnit>
+    <ObjectUnit Id="1074" Position="41.6711,82.8625,0" Rotation="2.4777" Scale="1,1,1" UnitType="Civilian" Player="3">
+        <Texture TexSlot="main" TexProps="male,01" TexLink=""/>
     </ObjectUnit>
     <ObjectUnit Id="530962964" Position="97.89,68.69,0" Rotation="0.801" Scale="1,1,1" UnitType="Marauder" Player="2"/>
     <ObjectUnit Id="24" Position="55,61,0" Rotation="0.8493" Scale="1,1,1" UnitType="MengskHologramBillboard"/>
@@ -9971,24 +9973,24 @@
         <AIActive Index="3" Value="0"/>
     </ObjectUnit>
     <ObjectUnit Id="68" Position="40,88,0" Rotation="0.0881" Scale="1,1,1" UnitType="MengskHologramBillboard"/>
-    <ObjectUnit Id="323" Position="68.18,124.9,0" Scale="1,1,1" UnitType="Civilian" Player="3">
-        <Texture TexSlot="main" TexProps="male,backpack,01" TexLink=""/>
-    </ObjectUnit>
     <ObjectUnit Id="10" Variation="3" Position="68.277,126.601,0" Scale="1,1,1" UnitType="Civilian" Player="3">
         <Texture TexSlot="main" TexProps="male,01" TexLink=""/>
+    </ObjectUnit>
+    <ObjectUnit Id="323" Position="68.18,124.9,0" Scale="1,1,1" UnitType="Civilian" Player="3">
+        <Texture TexSlot="main" TexProps="male,backpack,01" TexLink=""/>
     </ObjectUnit>
     <ObjectUnit Id="2690" Position="68.5998,118.3498,0" Rotation="2.841" Scale="1,1,1" UnitType="Marine" Player="2">
         <AIActive Index="1" Value="0"/>
     </ObjectUnit>
-    <ObjectUnit Id="2661" Position="41.724,19.1137,0" Rotation="0.6496" Scale="1,1,1" UnitType="Dog" Player="5"/>
     <ObjectUnit Id="645" Position="91.0998,76.0097,0" Scale="1,1,1" UnitType="Civilian" Player="5">
         <Texture TexSlot="main" TexProps="male,03" TexLink=""/>
     </ObjectUnit>
+    <ObjectUnit Id="2661" Position="41.724,19.1137,0" Rotation="0.6496" Scale="1,1,1" UnitType="Dog" Player="5"/>
     <ObjectUnit Id="1843405960" Position="78.5598,116.8298,0" Rotation="5.4448" Scale="1,1,1" UnitType="Medic" Player="2">
         <AIActive Index="1" Value="0"/>
         <AIActive Index="3" Value="0"/>
     </ObjectUnit>
-    <ObjectUnit Id="196996649" Variation="2" Position="94.2258,101.9396,0" Scale="1,1,1" UnitType="ProtossRelic">
+    <ObjectUnit Id="196996649" Variation="2" Position="92.4873,98.2458,0" Scale="1,1,1" UnitType="ProtossRelic">
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectUnit>
 </PlacedObjects>

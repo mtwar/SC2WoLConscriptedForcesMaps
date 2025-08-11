@@ -10,6 +10,7 @@
 <Achievement id="TRaynor01_3"/>
 <Actor id="SYSTEM_ActorConfig"/>
 <Actor id="ConstructionCrane"/>
+<Actor id="JarbanMinor_MiningSupplies" Variations="8"/>
 <Actor id="PathingBlocker1x1Doodad"/>
 <Actor id="Checkpoint"/>
 <Actor id="BillboardTall" Variations="1"/>
@@ -40,6 +41,7 @@
 <Actor id="MarSaraTree" Variations="0,1,2,3,4,5"/>
 <Actor id="MarSaraTreeDead" Variations="0,1,2,4,5"/>
 <Actor id="MarSaraTunnel"/>
+<Actor id="MiningBot"/>
 <Actor id="NewFolsomSandbags" Variations="0,4,5"/>
 <Actor id="Outhouse" Variations="0,2"/>
 <Actor id="PipesCap" Variations="0,1"/>
@@ -77,6 +79,7 @@
 <Actor id="WindRough"/>
 <Actor id="WindEmitterBrownMedium"/>
 <Actor id="WreckedSandbags" Variations="0,1,2"/>
+<Actor id="CargoTruck" Variations="1"/>
 <Actor id="ColonistVehicleAbandoned" Variations="0,3"/>
 <Actor id="MarSaraFoliage" Variations="2"/>
 <Actor id="AnimalCorpse" Variations="1,2,3,4,5,6,7,8"/>
