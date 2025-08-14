@@ -30527,20 +30527,20 @@
         <Preset Type="PresetValue" Library="Ntve" Id="00000067"/>
     </Element>
     <Element Type="FunctionCall" Id="CA92AD23">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="F6F91DFE"/>
+        <FunctionDef Type="FunctionDef" Library="ConB" Id="1F107338"/>
         <SubFunctionType Type="SubFuncType" Library="Ntve" Id="A7CC7F7D"/>
-        <Parameter Type="Param" Id="DC61A601"/>
+        <Parameter Type="Param" Id="C97BBBDA"/>
     </Element>
-    <Element Type="Param" Id="DC61A601">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="E6CC1334"/>
-        <FunctionCall Type="FunctionCall" Id="AE912A32"/>
+    <Element Type="Param" Id="C97BBBDA">
+        <ParameterDef Type="ParamDef" Library="ConB" Id="AD62AC58"/>
+        <FunctionCall Type="FunctionCall" Id="95A79DB2"/>
     </Element>
-    <Element Type="FunctionCall" Id="AE912A32">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="9A7ECA93"/>
-        <Parameter Type="Param" Id="FDBCC517"/>
+    <Element Type="FunctionCall" Id="95A79DB2">
+        <FunctionDef Type="FunctionDef" Library="ConB" Id="6BDB04A4"/>
+        <Parameter Type="Param" Id="88DF48C1"/>
     </Element>
-    <Element Type="Param" Id="FDBCC517">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="02310419"/>
+    <Element Type="Param" Id="88DF48C1">
+        <ParameterDef Type="ParamDef" Library="ConB" Id="2791A0C3"/>
         <Value>Vulture</Value>
         <ValueType Type="gamelink"/>
         <ValueGameType Type="Unit"/>

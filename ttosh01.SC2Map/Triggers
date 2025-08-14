@@ -26995,7 +26995,6 @@
     <Element Type="Trigger" Id="A8D36713">
         <Condition Type="FunctionCall" Id="6EC841D1"/>
         <Action Type="FunctionCall" Id="D0803CD6"/>
-        <Action Type="FunctionCall" Id="EF00CB19"/>
         <Action Type="FunctionCall" Id="51F656C6"/>
         <Action Type="FunctionCall" Id="B5E80A33"/>
         <Action Type="FunctionCall" Id="5186E963"/>
@@ -27047,41 +27046,20 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000177"/>
         <Preset Type="PresetValue" Library="Ntve" Id="00000545"/>
     </Element>
-    <Element Type="FunctionCall" Id="EF00CB19">
-        <Disabled/>
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="CA947B66"/>
-        <Parameter Type="Param" Id="E67FB6D0"/>
-        <Parameter Type="Param" Id="4F30FDAD"/>
-        <Parameter Type="Param" Id="FE122919"/>
-    </Element>
-    <Element Type="Param" Id="E67FB6D0">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="6BD9B1E0"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000063"/>
-    </Element>
-    <Element Type="Param" Id="4F30FDAD">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="6360C9A5"/>
-        <Variable Type="Variable" Id="00000017"/>
-    </Element>
-    <Element Type="Param" Id="FE122919">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="1D99B387"/>
-        <Value>Reaper</Value>
-        <ValueType Type="userinstance"/>
-        <ValueContext Value="TechUnit"/>
-    </Element>
     <Element Type="FunctionCall" Id="51F656C6">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="F6F91DFE"/>
-        <Parameter Type="Param" Id="5CD4092C"/>
+        <FunctionDef Type="FunctionDef" Library="ConB" Id="1F107338"/>
+        <Parameter Type="Param" Id="AED51F1C"/>
     </Element>
-    <Element Type="Param" Id="5CD4092C">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="E6CC1334"/>
-        <FunctionCall Type="FunctionCall" Id="816532C2"/>
+    <Element Type="Param" Id="AED51F1C">
+        <ParameterDef Type="ParamDef" Library="ConB" Id="AD62AC58"/>
+        <FunctionCall Type="FunctionCall" Id="3C27F400"/>
     </Element>
-    <Element Type="FunctionCall" Id="816532C2">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="9A7ECA93"/>
-        <Parameter Type="Param" Id="27E77F5A"/>
+    <Element Type="FunctionCall" Id="3C27F400">
+        <FunctionDef Type="FunctionDef" Library="ConB" Id="6BDB04A4"/>
+        <Parameter Type="Param" Id="82508F96"/>
     </Element>
-    <Element Type="Param" Id="27E77F5A">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="02310419"/>
+    <Element Type="Param" Id="82508F96">
+        <ParameterDef Type="ParamDef" Library="ConB" Id="2791A0C3"/>
         <Value>Reaper</Value>
         <ValueType Type="gamelink"/>
         <ValueGameType Type="Unit"/>

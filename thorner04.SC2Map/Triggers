@@ -645,8 +645,6 @@
     </Element>
     <Element Type="Trigger" Id="F7482F32">
         <Action Type="Comment" Id="C53D8BFC"/>
-        <Action Type="FunctionCall" Id="715BFB81"/>
-        <Action Type="FunctionCall" Id="A934C3AE"/>
         <Action Type="FunctionCall" Id="DC09E67B"/>
         <Action Type="Comment" Id="F9FB0B1A"/>
         <Action Type="FunctionCall" Id="CA6DCF8D"/>
@@ -658,45 +656,6 @@
             Tech restrictions are mainly handled by the &quot;Load campaign data&quot; action.
             You can apply further tech restrictions here if needed.
         </Comment>
-    </Element>
-    <Element Type="FunctionCall" Id="715BFB81">
-        <Disabled/>
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="CA947B66"/>
-        <Parameter Type="Param" Id="45B97F5A"/>
-        <Parameter Type="Param" Id="B9FEDD5A"/>
-        <Parameter Type="Param" Id="8BE38CC2"/>
-    </Element>
-    <Element Type="Param" Id="45B97F5A">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="6BD9B1E0"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000063"/>
-    </Element>
-    <Element Type="Param" Id="B9FEDD5A">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="6360C9A5"/>
-        <Variable Type="Variable" Id="AAAE269C"/>
-    </Element>
-    <Element Type="Param" Id="8BE38CC2">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="1D99B387"/>
-        <Value>Thor</Value>
-        <ValueType Type="userinstance"/>
-        <ValueContext Value="TechUnit"/>
-    </Element>
-    <Element Type="FunctionCall" Id="A934C3AE">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="F6F91DFE"/>
-        <Parameter Type="Param" Id="8CD23770"/>
-    </Element>
-    <Element Type="Param" Id="8CD23770">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="E6CC1334"/>
-        <FunctionCall Type="FunctionCall" Id="3CF0125F"/>
-    </Element>
-    <Element Type="FunctionCall" Id="3CF0125F">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="9A7ECA93"/>
-        <Parameter Type="Param" Id="2E5B4554"/>
-    </Element>
-    <Element Type="Param" Id="2E5B4554">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="02310419"/>
-        <Value>Thor</Value>
-        <ValueType Type="gamelink"/>
-        <ValueGameType Type="Unit"/>
     </Element>
     <Element Type="FunctionCall" Id="DC09E67B">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="0F7C3248"/>

@@ -22264,7 +22264,6 @@
         <Action Type="Comment" Id="A32F770B"/>
         <Action Type="FunctionCall" Id="AF48A9C5"/>
         <Action Type="Comment" Id="A830B749"/>
-        <Action Type="FunctionCall" Id="B9F8A1AB"/>
         <Action Type="FunctionCall" Id="A595F7B0"/>
         <Action Type="FunctionCall" Id="CF58B16E"/>
         <Action Type="FunctionCall" Id="BA253147"/>
@@ -22399,41 +22398,20 @@
             Bring in the cavalry.
         </Comment>
     </Element>
-    <Element Type="FunctionCall" Id="B9F8A1AB">
-        <Disabled/>
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="CA947B66"/>
-        <Parameter Type="Param" Id="0984A0DA"/>
-        <Parameter Type="Param" Id="118E1FBC"/>
-        <Parameter Type="Param" Id="170ADBC6"/>
-    </Element>
-    <Element Type="Param" Id="0984A0DA">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="6BD9B1E0"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000063"/>
-    </Element>
-    <Element Type="Param" Id="118E1FBC">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="6360C9A5"/>
-        <Variable Type="Variable" Id="00000017"/>
-    </Element>
-    <Element Type="Param" Id="170ADBC6">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="1D99B387"/>
-        <Value>Hellion</Value>
-        <ValueType Type="userinstance"/>
-        <ValueContext Value="TechUnit"/>
-    </Element>
     <Element Type="FunctionCall" Id="A595F7B0">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="F6F91DFE"/>
-        <Parameter Type="Param" Id="63CEF848"/>
+        <FunctionDef Type="FunctionDef" Library="ConB" Id="1F107338"/>
+        <Parameter Type="Param" Id="0F9C9D49"/>
     </Element>
-    <Element Type="Param" Id="63CEF848">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="E6CC1334"/>
-        <FunctionCall Type="FunctionCall" Id="1E559573"/>
+    <Element Type="Param" Id="0F9C9D49">
+        <ParameterDef Type="ParamDef" Library="ConB" Id="AD62AC58"/>
+        <FunctionCall Type="FunctionCall" Id="6383C5FB"/>
     </Element>
-    <Element Type="FunctionCall" Id="1E559573">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="9A7ECA93"/>
-        <Parameter Type="Param" Id="D8EDA632"/>
+    <Element Type="FunctionCall" Id="6383C5FB">
+        <FunctionDef Type="FunctionDef" Library="ConB" Id="6BDB04A4"/>
+        <Parameter Type="Param" Id="5955F120"/>
     </Element>
-    <Element Type="Param" Id="D8EDA632">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="02310419"/>
+    <Element Type="Param" Id="5955F120">
+        <ParameterDef Type="ParamDef" Library="ConB" Id="2791A0C3"/>
         <Value>Hellion</Value>
         <ValueType Type="gamelink"/>
         <ValueGameType Type="Unit"/>

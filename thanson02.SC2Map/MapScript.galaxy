@@ -7,6 +7,7 @@
 //==================================================================================================
 include "TriggerLibs/NativeLib"
 include "TriggerLibs/LibertyLib"
+include "LibConB"
 include "LibCamp"
 include "LibWoLC"
 include "LibWCMI"
@@ -18,6 +19,7 @@ include "LibWCUI"
 void InitLibs () {
     libNtve_InitLib();
     libLbty_InitLib();
+    libConB_InitLib();
     libCamp_InitLib();
     libWoLC_InitLib();
     libWCMI_InitLib();
@@ -2597,7 +2599,7 @@ bool gt_IntroHellions_Func (bool testConds, bool runActions) {
     while (!((TimerGetRemaining(gv_mainTimer) <= 80.0))) {
         Wait(0.1, c_timeGame);
     }
-    libWoLC_gf_LogDebugIfNotEmpty(libWoLC_gf_UnlockConscriptionUnit("Hellion"));
+    libConB_gf_LogDebugIfNotEmpty(libConB_gf_UnlockConscriptionUnit("Hellion"));
     libNtve_gf_CreateUnitsAtPoint2(libNtve_gf_DifficultyValueInt(4, 4, 3, 3), "Hellion", 0, gv_pLAYER_08_SWANN, PointFromId(1385));
     UnitGroupAddUnitGroup(lv_introHellionGroup, UnitLastCreatedGroup());
     libCamp_gf_CreateDropPod(libCamp_ge_DropPodRace_Terran, PointFromId(930), UnitLastCreatedGroup(), true);

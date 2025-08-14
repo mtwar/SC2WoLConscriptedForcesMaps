@@ -7,6 +7,7 @@
 //==================================================================================================
 include "TriggerLibs/NativeLib"
 include "TriggerLibs/LibertyLib"
+include "LibConB"
 include "LibCamp"
 include "LibWoLC"
 include "LibWCMI"
@@ -17,6 +18,7 @@ include "LibWCMI"
 void InitLibs () {
     libNtve_InitLib();
     libLbty_InitLib();
+    libConB_InitLib();
     libCamp_InitLib();
     libWoLC_InitLib();
     libWCMI_InitLib();
@@ -3963,7 +3965,7 @@ bool gt_TransmissionMiraHanGivesVulturesQ_Func (bool testConds, bool runActions)
     UIAlertPoint("Trigger", gv_p01_USER, StringExternal("Param/Value/4950C282"), null, PointFromId(1243));
     // Transmission - SoundLink("THorner02Han00017", 0)
     libCamp_gf_SendTransmissionCampaign(null, SoundLink("THorner02Han00017", -1), c_transmissionDurationAdd, 0.0, true);
-    libWoLC_gf_LogDebugIfNotEmpty(libWoLC_gf_UnlockConscriptionUnit("Vulture"));
+    libConB_gf_LogDebugIfNotEmpty(libConB_gf_UnlockConscriptionUnit("Vulture"));
     // Transmission - SoundLink("THorner02Tychus00023", -1)
     libCamp_gf_SendTransmissionCampaign(null, SoundLink("THorner02Tychus00023", -1), c_transmissionDurationAdd, 0.0, true);
     // Transmission - SoundLink("THorner02Raynor00024", -1)

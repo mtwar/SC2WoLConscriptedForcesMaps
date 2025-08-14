@@ -803,7 +803,6 @@ bool gt_Init01Technology_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    libWoLC_gf_LogDebugIfNotEmpty(libWoLC_gf_UnlockConscriptionUnit("Thor"));
     TechTreeAbilityAllow(gv_p01_USER, AbilityCommand("OdinNuclearStrike", 0), false);
     autoCA6DCF8D_g = UnitGroup("AutoTurret", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
     autoCA6DCF8D_u = UnitGroupCount(autoCA6DCF8D_g, c_unitCountAll);

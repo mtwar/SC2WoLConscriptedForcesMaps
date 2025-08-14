@@ -13914,20 +13914,20 @@
         <FunctionCall Type="FunctionCall" Id="E3F523CF"/>
     </Element>
     <Element Type="FunctionCall" Id="D924D4C2">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="F6F91DFE"/>
+        <FunctionDef Type="FunctionDef" Library="ConB" Id="1F107338"/>
         <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000004"/>
-        <Parameter Type="Param" Id="1E141887"/>
+        <Parameter Type="Param" Id="97B71BE1"/>
     </Element>
-    <Element Type="Param" Id="1E141887">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="E6CC1334"/>
-        <FunctionCall Type="FunctionCall" Id="DC72DF7F"/>
+    <Element Type="Param" Id="97B71BE1">
+        <ParameterDef Type="ParamDef" Library="ConB" Id="AD62AC58"/>
+        <FunctionCall Type="FunctionCall" Id="FE9AAE8A"/>
     </Element>
-    <Element Type="FunctionCall" Id="DC72DF7F">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="9A7ECA93"/>
-        <Parameter Type="Param" Id="26482980"/>
+    <Element Type="FunctionCall" Id="FE9AAE8A">
+        <FunctionDef Type="FunctionDef" Library="ConB" Id="6BDB04A4"/>
+        <Parameter Type="Param" Id="D2A98ADC"/>
     </Element>
-    <Element Type="Param" Id="26482980">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="02310419"/>
+    <Element Type="Param" Id="D2A98ADC">
+        <ParameterDef Type="ParamDef" Library="ConB" Id="2791A0C3"/>
         <Value>Marauder</Value>
         <ValueType Type="gamelink"/>
         <ValueGameType Type="Unit"/>

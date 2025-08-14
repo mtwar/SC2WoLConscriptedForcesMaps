@@ -11372,7 +11372,6 @@
         <Variable Type="Variable" Id="2254E5AF"/>
         <Action Type="FunctionCall" Id="194CF0F4"/>
         <Action Type="FunctionCall" Id="6BBCF558"/>
-        <Action Type="FunctionCall" Id="D7FBF089"/>
         <Action Type="FunctionCall" Id="40DCFC19"/>
         <Action Type="FunctionCall" Id="088BBAF3"/>
         <Action Type="FunctionCall" Id="B970FFFD"/>
@@ -11450,41 +11449,20 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000420"/>
         <Preset Type="PresetValue" Library="Ntve" Id="00000013"/>
     </Element>
-    <Element Type="FunctionCall" Id="D7FBF089">
-        <Disabled/>
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="CA947B66"/>
-        <Parameter Type="Param" Id="B6F48742"/>
-        <Parameter Type="Param" Id="59267CA4"/>
-        <Parameter Type="Param" Id="FDA3D436"/>
-    </Element>
-    <Element Type="Param" Id="B6F48742">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="6BD9B1E0"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000063"/>
-    </Element>
-    <Element Type="Param" Id="59267CA4">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="6360C9A5"/>
-        <Variable Type="Variable" Id="484C648E"/>
-    </Element>
-    <Element Type="Param" Id="FDA3D436">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="1D99B387"/>
-        <Value>Wraith</Value>
-        <ValueType Type="userinstance"/>
-        <ValueContext Value="TechUnit"/>
-    </Element>
     <Element Type="FunctionCall" Id="40DCFC19">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="F6F91DFE"/>
-        <Parameter Type="Param" Id="67D7AFB5"/>
+        <FunctionDef Type="FunctionDef" Library="ConB" Id="1F107338"/>
+        <Parameter Type="Param" Id="5580A080"/>
     </Element>
-    <Element Type="Param" Id="67D7AFB5">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="E6CC1334"/>
-        <FunctionCall Type="FunctionCall" Id="3E64DCCF"/>
+    <Element Type="Param" Id="5580A080">
+        <ParameterDef Type="ParamDef" Library="ConB" Id="AD62AC58"/>
+        <FunctionCall Type="FunctionCall" Id="733363D1"/>
     </Element>
-    <Element Type="FunctionCall" Id="3E64DCCF">
-        <FunctionDef Type="FunctionDef" Library="WoLC" Id="9A7ECA93"/>
-        <Parameter Type="Param" Id="15CC901A"/>
+    <Element Type="FunctionCall" Id="733363D1">
+        <FunctionDef Type="FunctionDef" Library="ConB" Id="6BDB04A4"/>
+        <Parameter Type="Param" Id="5FC73E58"/>
     </Element>
-    <Element Type="Param" Id="15CC901A">
-        <ParameterDef Type="ParamDef" Library="WoLC" Id="02310419"/>
+    <Element Type="Param" Id="5FC73E58">
+        <ParameterDef Type="ParamDef" Library="ConB" Id="2791A0C3"/>
         <Value>Wraith</Value>
         <ValueType Type="gamelink"/>
         <ValueGameType Type="Unit"/>
