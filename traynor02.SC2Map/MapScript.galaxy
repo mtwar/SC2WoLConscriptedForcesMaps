@@ -10,6 +10,7 @@ include "TriggerLibs/LibertyLib"
 include "LibCamp"
 include "LibWoLC"
 include "LibWCMI"
+include "LibDE1190BD"
 
 //--------------------------------------------------------------------------------------------------
 // Library Initialization
@@ -20,6 +21,7 @@ void InitLibs () {
     libCamp_InitLib();
     libWoLC_InitLib();
     libWCMI_InitLib();
+    libDE1190BD_InitLib();
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -222,6 +224,9 @@ trigger gt_ObjectiveRebelsFailed;
 trigger gt_ObjectiveDominionExcavationSiteCreate;
 trigger gt_ObjectiveDominionExcavationSiteUpdate;
 trigger gt_ObjectiveDominionExcavationSiteComplete;
+trigger gt_ObjectiveDominionExcavationSiteCreate2;
+trigger gt_ObjectiveDominionExcavationSiteUpdate2;
+trigger gt_ObjectiveDominionExcavationSiteComplete2;
 trigger gt_BriefingQ;
 trigger gt_BriefingScene00;
 trigger gt_BriefingScene01;
@@ -356,6 +361,7 @@ bool gt_Initialization_Func (bool testConds, bool runActions) {
     TriggerExecute(gt_Init07Help, true, true);
     libWoLC_gf_RegisterFootageRecording(gt_BriefingQ);
     TriggerExecute(gt_IntroSequence, true, false);
+    TriggerExecute(libDE1190BD_gt_RunAllCustomAI, true, false);
     return true;
 }
 
@@ -788,6 +794,8 @@ bool gt_StartGame_Func (bool testConds, bool runActions) {
     Wait(2.0, c_timeReal);
     TriggerExecute(gt_ShowTipsQ, true, false);
     TriggerExecute(gt_BuildMarinesandSCVsQ, true, true);
+    TriggerExecute(gt_ObjectiveDominionExcavationSiteCreate, true, true);
+    TriggerExecute(gt_ObjectiveDominionExcavationSiteComplete2, true, false);
     return true;
 }
 
@@ -4588,7 +4596,7 @@ void gt_ObjectiveRebelsFailed_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Objective Dominion Excavation Site Create
+// Trigger: Objective Excavation Site Create
 //--------------------------------------------------------------------------------------------------
 bool gt_ObjectiveDominionExcavationSiteCreate_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
@@ -4605,8 +4613,8 @@ bool gt_ObjectiveDominionExcavationSiteCreate_Func (bool testConds, bool runActi
     }
 
     TriggerEnable(TriggerGetCurrent(), false);
-    libWCMI_gf_CreateObjectiveCampaign("TRaynor01_4");
-    libWCMI_gf_HideObjectiveCampaign("TRaynor01_4");
+    libWCMI_gf_CreateObjectiveCampaign("TRaynor02_3");
+    libWCMI_gf_HideObjectiveCampaign("TRaynor02_3");
     Wait(libWCMI_gv_campaignObjectiveDelay, c_timeGame);
     return true;
 }
@@ -4617,7 +4625,7 @@ void gt_ObjectiveDominionExcavationSiteCreate_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Objective Dominion Excavation Site Update
+// Trigger: Objective Excavation Site Update
 //--------------------------------------------------------------------------------------------------
 bool gt_ObjectiveDominionExcavationSiteUpdate_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
@@ -4633,7 +4641,7 @@ bool gt_ObjectiveDominionExcavationSiteUpdate_Func (bool testConds, bool runActi
         return true;
     }
 
-    libWCMI_gf_DisplayMissionObjectiveRewardFloatingText(UnitGetPosition(EventUnit()), "TRaynor01_4");
+    libWCMI_gf_DisplayMissionObjectiveRewardFloatingText(UnitGetPosition(EventUnit()), "TRaynor02_3");
     UnitKill(EventUnit());
     TriggerExecute(gt_ObjectiveDominionExcavationSiteComplete, true, false);
     return true;
@@ -4646,7 +4654,7 @@ void gt_ObjectiveDominionExcavationSiteUpdate_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Objective Dominion Excavation Site Complete
+// Trigger: Objective Excavation Site Complete
 //--------------------------------------------------------------------------------------------------
 bool gt_ObjectiveDominionExcavationSiteComplete_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
@@ -4663,7 +4671,7 @@ bool gt_ObjectiveDominionExcavationSiteComplete_Func (bool testConds, bool runAc
     }
 
     TriggerEnable(TriggerGetCurrent(), false);
-    libWCMI_gf_ZS_SetMissionObjectiveState("TRaynor01_4", libWoLC_ge_MissionObjectiveState_Completed);
+    libWCMI_gf_ZS_SetMissionObjectiveState("TRaynor02_3", libWoLC_ge_MissionObjectiveState_Completed);
     Wait(libWCMI_gv_campaignObjectiveDelay, c_timeGame);
     return true;
 }
@@ -4671,6 +4679,93 @@ bool gt_ObjectiveDominionExcavationSiteComplete_Func (bool testConds, bool runAc
 //--------------------------------------------------------------------------------------------------
 void gt_ObjectiveDominionExcavationSiteComplete_Init () {
     gt_ObjectiveDominionExcavationSiteComplete = TriggerCreate("gt_ObjectiveDominionExcavationSiteComplete_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Objective Dominion Starport Create
+//--------------------------------------------------------------------------------------------------
+bool gt_ObjectiveDominionExcavationSiteCreate2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    libWCMI_gf_CreateObjectiveCampaign("TRaynor02_4");
+    Wait(libWCMI_gv_campaignObjectiveDelay, c_timeGame);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ObjectiveDominionExcavationSiteCreate2_Init () {
+    gt_ObjectiveDominionExcavationSiteCreate2 = TriggerCreate("gt_ObjectiveDominionExcavationSiteCreate2_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Objective Dominion Starport Update
+//--------------------------------------------------------------------------------------------------
+bool gt_ObjectiveDominionExcavationSiteUpdate2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((gv_gameOver == false))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libWCMI_gf_DisplayMissionObjectiveRewardFloatingText(UnitGetPosition(EventUnit()), "TRaynor02_4");
+    libWCMI_gf_ZS_SetMissionObjectiveState("TRaynor02_4", libWoLC_ge_MissionObjectiveState_Completed);
+    Wait(libWCMI_gv_campaignObjectiveDelay, c_timeGame);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ObjectiveDominionExcavationSiteUpdate2_Init () {
+    gt_ObjectiveDominionExcavationSiteUpdate2 = TriggerCreate("gt_ObjectiveDominionExcavationSiteUpdate2_Func");
+    TriggerAddEventUnitDied(gt_ObjectiveDominionExcavationSiteUpdate2, UnitRefFromUnit(UnitFromId(1206667556)));
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Objective Dominion Starport Discover Q
+//--------------------------------------------------------------------------------------------------
+bool gt_ObjectiveDominionExcavationSiteComplete2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    Wait(60.0, c_timeGame);
+    VisRevealArea(gv_pLAYER_01_USER, RegionFromId(7), 8.0, false);
+    libWCMI_gf_CreateObjectivePing(true, PointFromId(29417979), StringExternal("Param/Value/B633E6E5"));
+    TriggerExecute(gt_ObjectiveDominionExcavationSiteCreate2, true, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ObjectiveDominionExcavationSiteComplete2_Init () {
+    gt_ObjectiveDominionExcavationSiteComplete2 = TriggerCreate("gt_ObjectiveDominionExcavationSiteComplete2_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -5243,6 +5338,9 @@ void InitTriggers () {
     gt_ObjectiveDominionExcavationSiteCreate_Init();
     gt_ObjectiveDominionExcavationSiteUpdate_Init();
     gt_ObjectiveDominionExcavationSiteComplete_Init();
+    gt_ObjectiveDominionExcavationSiteCreate2_Init();
+    gt_ObjectiveDominionExcavationSiteUpdate2_Init();
+    gt_ObjectiveDominionExcavationSiteComplete2_Init();
     gt_BriefingQ_Init();
     gt_BriefingScene00_Init();
     gt_BriefingScene01_Init();

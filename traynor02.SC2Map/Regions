@@ -506,7 +506,7 @@
     <region id="26">
         <name value="Starting SCVs"/>
         <shape type="rect">
-            <quad value="77.4658,25.0043,80.4243,31.6274"/>
+            <quad value="77.4707,25,80.4291,33"/>
         </shape>
         <shape type="rect">
             <quad value="80.429,24.771,84.429,27.271"/>
@@ -527,6 +527,13 @@
         <shape type="circle">
             <center value="105.361,11.6394"/>
             <radius value="2.4396"/>
+        </shape>
+    </region>
+    <region id="7">
+        <name value="Starport Reveal"/>
+        <shape type="circle">
+            <center value="117.2507,108.0422"/>
+            <radius value="3.316"/>
         </shape>
     </region>
 </Regions>
