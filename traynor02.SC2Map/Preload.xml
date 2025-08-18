@@ -158,7 +158,7 @@
 <Unit id="Marine"/>
 <Unit id="Marauder"/>
 <Unit id="Hellion"/>
-<Unit id="RichMineralField" Variations="7,9"/>
+<Unit id="RichMineralField" Variations="7,8,9"/>
 <Unit id="RichMineralField750" Variations="5"/>
 <Unit id="Rocks2x2NonConjoined"/>
 <Unit id="Beacon_Terran"/>
@@ -183,4 +183,6 @@
 <Unit id="Medic"/>
 <Unit id="ThornLizard"/>
 <Unit id="HydraliskL"/>
+<Weapon id="WraithA"/>
+<Weapon id="WraithG"/>
 </Preload>

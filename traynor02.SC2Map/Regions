@@ -2,10 +2,9 @@
 <Regions>
     <region id="8">
         <name value="Dominion Base"/>
-        <invisible/>
         <shape type="circle">
-            <center value="42.1477,97.5014"/>
-            <radius value="15.5"/>
+            <center value="43.15,96.5"/>
+            <radius value="13.5"/>
         </shape>
         <shape type="circle">
             <center value="46.8791,77.5664"/>
@@ -30,10 +29,6 @@
         <shape type="circle">
             <center value="57.7934,92.1472"/>
             <radius value="3.6967"/>
-        </shape>
-        <shape type="circle">
-            <center value="49.4638,111.8603"/>
-            <radius value="2.3881"/>
         </shape>
         <shape type="circle">
             <center value="53.4228,72.426"/>

@@ -713,7 +713,6 @@ bool gt_Init06Difficulties_Func (bool testConds, bool runActions) {
     UnitCargoCreate(UnitFromId(5), "Marine", libNtve_gf_DifficultyValueInt(2, 3, 4, 6));
     UnitCargoCreate(UnitFromId(1418839275), "Marine", libNtve_gf_DifficultyValueInt(3, 4, 4, 2));
     UnitCargoCreate(UnitFromId(1418839275), "Marauder", libNtve_gf_DifficultyValueInt(0, 0, 0, 1));
-    TriggerExecute(libDE1190BD_gt_RunAllCustomAI, true, false);
     return true;
 }
 
@@ -3498,6 +3497,7 @@ bool gt_StartAI_Func (bool testConds, bool runActions) {
     AICampaignStart(gv_pLAYER_04_REBELS);
     AICampaignStart(gv_pLAYER_05_PATROL);
     TriggerExecute(gt_DominionAttackWaves, true, false);
+    TriggerExecute(libDE1190BD_gt_RunAllCustomAI, true, false);
     return true;
 }
 
@@ -3663,11 +3663,11 @@ bool gt_PatrolAttackWaves_Func (bool testConds, bool runActions) {
     AIAttackWaveAddUnits4(0, 1, 1, 1, "Wraith");
     AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(lv_intervalCasual, lv_intervalNormal, lv_intervalHard, lv_intervalBrutal), true);
     gf_SetAttackWaveParameters();
-    AIAttackWaveAddUnits4(0, 1, 1, 2, "Wraith");
+    AIAttackWaveAddUnits4(1, 1, 1, 2, "Wraith");
     AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(lv_intervalCasual, lv_intervalNormal, lv_intervalHard, lv_intervalBrutal), true);
     while (true) {
         gf_SetAttackWaveParameters();
-        AIAttackWaveAddUnits4(0, 1, 2, 3, "Wraith");
+        AIAttackWaveAddUnits4(1, 1, 2, 3, "Wraith");
         AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(lv_intervalCasual, lv_intervalNormal, lv_intervalHard, lv_intervalBrutal), true);
     }
     return true;
@@ -3875,7 +3875,7 @@ bool gt_CrippleWraiths_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((UnitGetType(EventUnit()) == "Wraith"))) {
+        if (!((UnitGetType(EventUnitCreatedUnit()) == "Wraith"))) {
             return false;
         }
     }
@@ -3885,14 +3885,14 @@ bool gt_CrippleWraiths_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UnitSetPropertyFixed(EventUnit(), c_unitPropEnergyMax, 50.0);
+    UnitSetPropertyFixed(EventUnitCreatedUnit(), c_unitPropEnergyMax, 50.0);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
 void gt_CrippleWraiths_Init () {
     gt_CrippleWraiths = TriggerCreate("gt_CrippleWraiths_Func");
-    TriggerAddEventUnitTrainProgress(gt_CrippleWraiths, null, c_unitProgressStageComplete);
+    TriggerAddEventUnitCreated(gt_CrippleWraiths, UnitRefFromUnit(UnitFromId(1206667556)), null, null);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4802,11 +4802,7 @@ bool gt_ObjectiveDominionExcavationSiteCreate2_Func (bool testConds, bool runAct
             return false;
         }
 
-        if (!((UnitGetOwner(EventUnit()) == gv_pLAYER_05_PATROL))) {
-            return false;
-        }
-
-        if (!((UnitGetType(EventUnit()) == "Wraith"))) {
+        if (!((UnitGetOwner(EventUnit()) == gv_pLAYER_01_USER))) {
             return false;
         }
     }
@@ -4828,7 +4824,6 @@ bool gt_ObjectiveDominionExcavationSiteCreate2_Func (bool testConds, bool runAct
     Wait(libWCMI_gv_campaignObjectiveDelay, c_timeReal);
     libCamp_gf_SetAllSoundChannelVolumesCampaign(libNtve_ge_VolumeChannelMode_Game);
     VisRevealArea(gv_pLAYER_01_USER, RegionFromId(7), 8.0, false);
-    libWCMI_gf_CreateObjectivePing(true, PointFromId(29417979), StringExternal("Param/Value/B633E6E5"));
     Wait(libWCMI_gv_campaignObjectiveDelay, c_timeReal);
     return true;
 }
@@ -4836,7 +4831,8 @@ bool gt_ObjectiveDominionExcavationSiteCreate2_Func (bool testConds, bool runAct
 //--------------------------------------------------------------------------------------------------
 void gt_ObjectiveDominionExcavationSiteCreate2_Init () {
     gt_ObjectiveDominionExcavationSiteCreate2 = TriggerCreate("gt_ObjectiveDominionExcavationSiteCreate2_Func");
-    TriggerAddEventUnitRange(gt_ObjectiveDominionExcavationSiteCreate2, null, UnitFromId(18), 20.0, true);
+    TriggerAddEventUnitAttacked2(gt_ObjectiveDominionExcavationSiteCreate2, null, "WraithG");
+    TriggerAddEventUnitAttacked2(gt_ObjectiveDominionExcavationSiteCreate2, null, "WraithA");
 }
 
 //--------------------------------------------------------------------------------------------------
