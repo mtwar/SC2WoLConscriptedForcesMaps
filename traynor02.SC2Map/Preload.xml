@@ -156,6 +156,7 @@
 <Unit id="StarportTechLab"/>
 <Unit id="SCV"/>
 <Unit id="Marine"/>
+<Unit id="Marauder"/>
 <Unit id="Hellion"/>
 <Unit id="RichMineralField" Variations="7,9"/>
 <Unit id="RichMineralField750" Variations="5"/>
@@ -169,6 +170,7 @@
 <Unit id="WarPig"/>
 <Unit id="DevilDog"/>
 <Unit id="Firebat"/>
+<Unit id="ScienceVessel"/>
 <Unit id="SpecialOpsDropship"/>
 <Unit id="MinerMale"/>
 <Unit id="Civilian" Variations="0,1,2"/>

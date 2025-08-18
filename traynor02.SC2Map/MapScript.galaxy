@@ -93,6 +93,9 @@ int gv_numberOfPallets;
 bool gv_barracksBuilt;
 int gv_dominionBasePing;
 int gv_rebelPing;
+int gv_hydraSplitsKilled;
+unit gv_hydraSplit1;
+unit gv_hydraSplit2;
 bool gv_victoryCinematicCompleted;
 
 void InitGlobals () {
@@ -197,6 +200,7 @@ trigger gt_AttackWaveDivert;
 trigger gt_AIMinerals;
 trigger gt_AIGas;
 trigger gt_AICrippled;
+trigger gt_CrippleWraiths;
 trigger gt_ShowTipsQ;
 trigger gt_CampaignTipsQ;
 trigger gt_TipTutorialVideosQ;
@@ -228,6 +232,9 @@ trigger gt_ObjectiveDominionExcavationSiteComplete;
 trigger gt_ObjectiveDominionExcavationSiteCreate2;
 trigger gt_ObjectiveDominionExcavationSiteUpdate2;
 trigger gt_ObjectiveDominionExcavationSiteComplete2;
+trigger gt_ObjectiveDominionExcavationSiteCreate3;
+trigger gt_ObjectiveDominionExcavationSiteComplete3;
+trigger gt_ObjectiveKilltheHydraliskSplit;
 trigger gt_BriefingQ;
 trigger gt_BriefingScene00;
 trigger gt_BriefingScene01;
@@ -676,6 +683,10 @@ bool gt_Init06Difficulties_Func (bool testConds, bool runActions) {
         AISetDifficulty(gv_pLAYER_02_DOMINION, c_diffRepairDamage, true);
         TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranInfantryArmorsLevel1", 1);
         TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranVehicleArmorsLevel1", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "Kit@PerditionAutoTracking", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "WraithCloak", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "ZergMissileWeaponsLevel1", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "ZergGroundArmorsLevel1", 1);
         TriggerEnable(gt_AICrippled, false);
     }
     else if (auto3687E612_val == 4) {
@@ -684,15 +695,26 @@ bool gt_Init06Difficulties_Func (bool testConds, bool runActions) {
         TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranInfantryWeaponsLevel1", 1);
         TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranVehicleArmorsLevel1", 1);
         TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranVehicleWeaponsLevel1", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "NeosteelFrame", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "Kit@PerditionAutoTracking", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "Kit@PerditionMineField", 1);
         TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranVehicleArmorsLevel1", 1);
         TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranVehicleWeaponsLevel1", 1);
-        TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "NeosteelFrame", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "WraithCloak", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "PunisherGrenades", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "ZergMissileWeaponsLevel1", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "ZergGroundArmorsLevel1", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "ZergMissileWeaponsLevel2", 1);
+        TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "ZergGroundArmorsLevel2", 1);
         TriggerEnable(gt_AICrippled, false);
     }
     else {
     }
     gv_mineGuardPairs = libNtve_gf_DifficultyValueInt(0, 0, 1, 2);
     UnitCargoCreate(UnitFromId(5), "Marine", libNtve_gf_DifficultyValueInt(2, 3, 4, 6));
+    UnitCargoCreate(UnitFromId(1418839275), "Marine", libNtve_gf_DifficultyValueInt(3, 4, 4, 2));
+    UnitCargoCreate(UnitFromId(1418839275), "Marauder", libNtve_gf_DifficultyValueInt(0, 0, 0, 1));
+    TriggerExecute(libDE1190BD_gt_RunAllCustomAI, true, false);
     return true;
 }
 
@@ -800,6 +822,7 @@ bool gt_StartGame_Func (bool testConds, bool runActions) {
     TriggerExecute(gt_ShowTipsQ, true, false);
     TriggerExecute(gt_BuildMarinesandSCVsQ, true, true);
     TriggerExecute(gt_ObjectiveDominionExcavationSiteCreate, true, true);
+    TriggerExecute(gt_ObjectiveDominionExcavationSiteCreate3, true, true);
     TriggerExecute(gt_ObjectiveDominionExcavationSiteComplete2, true, false);
     return true;
 }
@@ -3509,7 +3532,6 @@ bool gt_StartUpgradesH_Func (bool testConds, bool runActions) {
     TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranVehicleWeaponsLevel1", 1);
     TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranShipWeaponsLevel1", 1);
     TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranShipArmorsLevel1", 1);
-    TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "WraithCloak", 1);
     return true;
 }
 
@@ -3543,8 +3565,7 @@ bool gt_StartUpgradesI_Func (bool testConds, bool runActions) {
     TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranVehicleArmorsLevel2", 1);
     TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranVehicleWeaponsLevel2", 1);
     TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranShipWeaponsLevel2", 1);
-    TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranVehicleArmorsLevel2", 1);
-    TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "WraithCloak", 1);
+    TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranShipArmorsLevel2", 1);
     return true;
 }
 
@@ -3613,7 +3634,19 @@ void gt_DominionAttackWaves_Init () {
 // Trigger: Patrol Attack Waves
 //--------------------------------------------------------------------------------------------------
 bool gt_PatrolAttackWaves_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_intervalCasual;
+    int lv_intervalNormal;
+    int lv_intervalHard;
+    int lv_intervalBrutal;
+
     // Automatic Variable Declarations
+    // Variable Initialization
+    lv_intervalCasual = 450;
+    lv_intervalNormal = 390;
+    lv_intervalHard = 330;
+    lv_intervalBrutal = 270;
+
     // Conditions
     if (testConds) {
         if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
@@ -3629,17 +3662,14 @@ bool gt_PatrolAttackWaves_Func (bool testConds, bool runActions) {
     TriggerEnable(TriggerGetCurrent(), false);
     gf_SetAttackWaveParameters();
     AIAttackWaveAddUnits4(0, 1, 1, 1, "Wraith");
-    AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(360, 300, 240, 180), true);
+    AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(lv_intervalCasual, lv_intervalNormal, lv_intervalHard, lv_intervalBrutal), true);
     gf_SetAttackWaveParameters();
     AIAttackWaveAddUnits4(0, 1, 1, 2, "Wraith");
-    AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(360, 300, 240, 180), true);
-    gf_SetAttackWaveParameters();
-    AIAttackWaveAddUnits4(0, 1, 2, 2, "Wraith");
-    AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(360, 300, 240, 180), true);
+    AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(lv_intervalCasual, lv_intervalNormal, lv_intervalHard, lv_intervalBrutal), true);
     while (true) {
         gf_SetAttackWaveParameters();
         AIAttackWaveAddUnits4(0, 1, 2, 3, "Wraith");
-        AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(360, 300, 240, 180), true);
+        AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(lv_intervalCasual, lv_intervalNormal, lv_intervalHard, lv_intervalBrutal), true);
     }
     return true;
 }
@@ -3837,6 +3867,33 @@ bool gt_AICrippled_Func (bool testConds, bool runActions) {
 void gt_AICrippled_Init () {
     gt_AICrippled = TriggerCreate("gt_AICrippled_Func");
     TriggerAddEventUnitDied(gt_AICrippled, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Cripple Wraiths
+//--------------------------------------------------------------------------------------------------
+bool gt_CrippleWraiths_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetType(EventUnitCreatedUnit()) == "Wraith"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitSetPropertyFixed(EventUnit(), c_unitPropEnergy, 50.0);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_CrippleWraiths_Init () {
+    gt_CrippleWraiths = TriggerCreate("gt_CrippleWraiths_Func");
+    TriggerAddEventUnitCreated(gt_CrippleWraiths, null, null, null);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4771,6 +4828,9 @@ bool gt_ObjectiveDominionExcavationSiteCreate2_Func (bool testConds, bool runAct
     libWCMI_gf_CreateObjectiveCampaign("TRaynor02_4");
     Wait(libWCMI_gv_campaignObjectiveDelay, c_timeReal);
     libCamp_gf_SetAllSoundChannelVolumesCampaign(libNtve_ge_VolumeChannelMode_Game);
+    VisRevealArea(gv_pLAYER_01_USER, RegionFromId(7), 8.0, false);
+    libWCMI_gf_CreateObjectivePing(true, PointFromId(29417979), StringExternal("Param/Value/B633E6E5"));
+    Wait(libWCMI_gv_campaignObjectiveDelay, c_timeReal);
     return true;
 }
 
@@ -4828,15 +4888,113 @@ bool gt_ObjectiveDominionExcavationSiteComplete2_Func (bool testConds, bool runA
 
     TriggerEnable(TriggerGetCurrent(), false);
     TriggerExecute(gt_PatrolAttackWaves, true, false);
-    VisRevealArea(gv_pLAYER_01_USER, RegionFromId(7), 8.0, false);
-    libWCMI_gf_CreateObjectivePing(true, PointFromId(29417979), StringExternal("Param/Value/B633E6E5"));
-    TriggerExecute(gt_ObjectiveDominionExcavationSiteCreate2, true, false);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
 void gt_ObjectiveDominionExcavationSiteComplete2_Init () {
     gt_ObjectiveDominionExcavationSiteComplete2 = TriggerCreate("gt_ObjectiveDominionExcavationSiteComplete2_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Objective Kill the Hydralisk? Create
+//--------------------------------------------------------------------------------------------------
+bool gt_ObjectiveDominionExcavationSiteCreate3_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    libWCMI_gf_CreateObjectiveCampaign("TRaynor02_5");
+    libWCMI_gf_HideObjectiveCampaign("TRaynor02_5");
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ObjectiveDominionExcavationSiteCreate3_Init () {
+    gt_ObjectiveDominionExcavationSiteCreate3 = TriggerCreate("gt_ObjectiveDominionExcavationSiteCreate3_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Objective Kill the Hydralisk? Complete
+//--------------------------------------------------------------------------------------------------
+bool gt_ObjectiveDominionExcavationSiteComplete3_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    libWCMI_gf_DisplayMissionObjectiveRewardFloatingText(UnitGetPosition(EventUnit()), "TRaynor02_5");
+    libWCMI_gf_ZS_SetMissionObjectiveState("TRaynor02_5", libWoLC_ge_MissionObjectiveState_Completed);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ObjectiveDominionExcavationSiteComplete3_Init () {
+    gt_ObjectiveDominionExcavationSiteComplete3 = TriggerCreate("gt_ObjectiveDominionExcavationSiteComplete3_Func");
+    TriggerAddEventUnitDied(gt_ObjectiveDominionExcavationSiteComplete3, UnitRefFromUnit(UnitFromId(397374617)));
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Objective Kill the Hydralisk? Split
+//--------------------------------------------------------------------------------------------------
+bool gt_ObjectiveKilltheHydraliskSplit_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_health;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_health = UnitGetPropertyInt(EventUnit(), c_unitPropLifeMax, c_unitPropCurrent);
+
+    // Conditions
+    if (testConds) {
+        if (!(((EventUnit() == UnitFromId(397374617)) || (EventUnit() == gv_hydraSplit1) || (EventUnit() == gv_hydraSplit2)))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitCreate(1, "HydraliskL", 0, UnitGetOwner(EventUnit()), UnitGetPosition(EventUnit()), UnitGetFacing(EventUnit()));
+    UnitSetPropertyFixed(UnitLastCreated(), c_unitPropLifeMax, (lv_health / 2));
+    if ((gv_hydraSplit1 == null)) {
+        gv_hydraSplit1 = UnitLastCreated();
+    }
+
+    UnitCreate(1, "HydraliskL", 0, UnitGetOwner(EventUnit()), UnitGetPosition(EventUnit()), UnitGetFacing(EventUnit()));
+    UnitSetPropertyFixed(UnitLastCreated(), c_unitPropLifeMax, (lv_health / 2));
+    if ((gv_hydraSplit2 == null)) {
+        gv_hydraSplit2 = UnitLastCreated();
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ObjectiveKilltheHydraliskSplit_Init () {
+    gt_ObjectiveKilltheHydraliskSplit = TriggerCreate("gt_ObjectiveKilltheHydraliskSplit_Func");
+    TriggerAddEventUnitDied(gt_ObjectiveKilltheHydraliskSplit, null);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -5382,6 +5540,7 @@ void InitTriggers () {
     gt_AIMinerals_Init();
     gt_AIGas_Init();
     gt_AICrippled_Init();
+    gt_CrippleWraiths_Init();
     gt_ShowTipsQ_Init();
     gt_CampaignTipsQ_Init();
     gt_TipTutorialVideosQ_Init();
@@ -5413,6 +5572,9 @@ void InitTriggers () {
     gt_ObjectiveDominionExcavationSiteCreate2_Init();
     gt_ObjectiveDominionExcavationSiteUpdate2_Init();
     gt_ObjectiveDominionExcavationSiteComplete2_Init();
+    gt_ObjectiveDominionExcavationSiteCreate3_Init();
+    gt_ObjectiveDominionExcavationSiteComplete3_Init();
+    gt_ObjectiveKilltheHydraliskSplit_Init();
     gt_BriefingQ_Init();
     gt_BriefingScene00_Init();
     gt_BriefingScene01_Init();
