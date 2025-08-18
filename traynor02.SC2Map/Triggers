@@ -3313,6 +3313,7 @@
         <ValueGameType Type="Upgrade"/>
     </Element>
     <Element Type="FunctionCall" Id="7CAD8D91">
+        <Disabled/>
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000158"/>
         <SubFunctionType Type="SubFuncType" Library="Ntve" Id="363CE97C"/>
         <Parameter Type="Param" Id="B65BAA15"/>

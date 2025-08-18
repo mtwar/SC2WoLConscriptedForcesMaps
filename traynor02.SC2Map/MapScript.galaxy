@@ -705,7 +705,6 @@ bool gt_Init06Difficulties_Func (bool testConds, bool runActions) {
         TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "ZergMissileWeaponsLevel1", 1);
         TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "ZergGroundArmorsLevel1", 1);
         TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "ZergMissileWeaponsLevel2", 1);
-        TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "ZergGroundArmorsLevel2", 1);
         TriggerEnable(gt_AICrippled, false);
     }
     else {
