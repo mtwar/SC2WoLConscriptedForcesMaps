@@ -519,7 +519,7 @@
     <ObjectDoodad Id="958" Variation="3" Position="96.5,13.5,8.8186" Rotation="6.0224" Scale="1.157,1.157,1.157" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="981" Position="58.5,115.5,10.179" Rotation="5.8222" Scale="1.0793,1.0793,1.0793" Type="MarSaraTree">
+    <ObjectDoodad Id="981" Position="58.5,115.5,10.167" Rotation="5.8222" Scale="1.0793,1.0793,1.0793" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1125" Variation="1" Position="60.4545,98.5126,4.8605" Rotation="2.672" Scale="1,1,1" Type="TRaynor02CranePart3x3">
@@ -742,7 +742,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="248" Variation="5" Position="135.5,80.5,16.8745" Rotation="3.7673" Scale="1.1296,1.1296,1.1296" Type="MarSaraTree">
+    <ObjectDoodad Id="248" Variation="5" Position="135.5,78.5,14.8872" Rotation="3.7673" Scale="1.1296,1.1296,1.1296" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1269" Variation="4" Position="69.709,72.7268,-3.0871" Rotation="6.211" Scale="0.8852,0.8852,0.8852" Type="MarSaraBones">
@@ -795,7 +795,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="253" Variation="1" Position="135.5,82.5,14.8107" Rotation="1.6313" Scale="0.9055,0.9055,0.9055" Type="MarSaraTree">
+    <ObjectDoodad Id="253" Variation="1" Position="135.5,82.5,14.796" Rotation="1.6313" Scale="0.9055,0.9055,0.9055" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1264" Variation="5" Position="66.225,28.545,-3.185" Rotation="2.5688" Scale="1.1203,1.1203,1.1203" Type="MarSaraTreeDead">
@@ -1187,7 +1187,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="669" Variation="1" Position="64.5,127.5,11.62" Rotation="4.0888" Scale="1.042,1.042,1.042" Type="MarSaraTree">
+    <ObjectDoodad Id="669" Variation="1" Position="64.5,127.5,11.6303" Rotation="4.0888" Scale="1.042,1.042,1.042" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="279" Position="23.99,83.981,4.811" Rotation="0.4113" Scale="1,1,1" Type="PipesStack">
@@ -1274,7 +1274,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="664" Variation="5" Position="69.5,113.5,6.7993" Rotation="4.2846" Scale="1.0205,1.0205,1.0205" Type="MarSaraTree">
+    <ObjectDoodad Id="664" Variation="5" Position="69.5,113.5,6.8242" Rotation="4.2846" Scale="1.0205,1.0205,1.0205" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="755" Variation="2" Position="59.8208,95.0634,5.7487" Rotation="4.717" Scale="0.7998,0.7998,0.7998" Type="BraxisAlphaBarrels">
@@ -1512,7 +1512,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="649" Variation="2" Position="75.5,127.5,15.267" Rotation="1.6865" Scale="1.023,1.023,1.023" Type="MarSaraTree">
+    <ObjectDoodad Id="649" Variation="2" Position="75.5,127.5,15.2907" Rotation="1.6865" Scale="1.023,1.023,1.023" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1294" Variation="2" Position="114.2697,46.1538,-3.1906" Rotation="0.658" Scale="0.8007,0.8007,0.8007" Type="MarSaraTreeDead">
@@ -1603,7 +1603,7 @@
     <ObjectDoodad Id="652" Variation="4" Position="74.5,110.5,14.9672" Rotation="3.184" Scale="1.016,1.016,1.016" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1509459499" Variation="3" Position="61.5,115.5,9.042" Rotation="5.8515" Scale="1.1555,0.986,1.244" Type="MarSaraTree">
+    <ObjectDoodad Id="1509459499" Variation="3" Position="61.5,115.5,9.0241" Rotation="5.8515" Scale="1.1555,0.986,1.244" Type="MarSaraTree">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
@@ -1624,7 +1624,7 @@
     <ObjectDoodad Id="296" Variation="4" Position="110.5,126.5,15.5507" Rotation="1.0146" Scale="0.9392,0.9392,0.9392" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="1794350873" Variation="4" Position="61.5,117.5,11.1513" Rotation="4.778" Scale="1.1784,1.1784,1.1784" Type="MarSaraTree">
+    <ObjectDoodad Id="1794350873" Variation="4" Position="61.5,117.5,11.1464" Rotation="4.778" Scale="1.1784,1.1784,1.1784" Type="MarSaraTree">
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
@@ -2297,7 +2297,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="256" Variation="4" Position="135.5,86.5,14.8674" Rotation="3.791" Scale="0.802,0.802,0.802" Type="MarSaraTree">
+    <ObjectDoodad Id="256" Variation="4" Position="135.5,86.5,14.8676" Rotation="3.791" Scale="0.802,0.802,0.802" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="650" Variation="3" Position="73.5,116.5,12.814" Rotation="2.9211" Scale="0.838,0.838,0.838" Type="MarSaraTree">
@@ -2314,7 +2314,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="701" Variation="1" Position="54.5,125.5,11.1062" Rotation="5.1706" Scale="1.0292,1.0292,1.0292" Type="MarSaraTree">
+    <ObjectDoodad Id="701" Variation="1" Position="54.5,125.5,11.108" Rotation="5.1706" Scale="1.0292,1.0292,1.0292" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="726" Variation="1" Position="56.2956,71.9824,4.8225" Rotation="4.7121" Scale="1,1,1" Type="PipesShort">
@@ -2420,7 +2420,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="668" Position="72.5,119.5,14.8073" Rotation="0.899" Scale="1.1323,1.1323,1.1323" Type="MarSaraTree">
+    <ObjectDoodad Id="668" Position="72.5,119.5,14.816" Rotation="0.899" Scale="1.1323,1.1323,1.1323" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="289" Variation="4" Position="115.5,124.5,15.1645" Rotation="2.6958" Scale="0.9484,0.9484,0.9484" Type="MarSaraTree">
@@ -2514,7 +2514,7 @@
     <ObjectDoodad Id="297" Variation="1" Position="108.5,125.5,15.2346" Rotation="1.4147" Scale="0.8874,0.8874,0.8874" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="258" Variation="3" Position="134.5,89.5,14.8303" Rotation="0.2121" Scale="1.1977,1.1977,1.1977" Type="MarSaraTree">
+    <ObjectDoodad Id="258" Variation="3" Position="134.5,89.5,14.8305" Rotation="0.2121" Scale="1.1977,1.1977,1.1977" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1295" Variation="5" Position="113.037,36.673,-3.185" Rotation="1.8505" Scale="1.1203,1.1203,1.1203" Type="MarSaraTreeDead">
@@ -2631,7 +2631,7 @@
     <ObjectDoodad Id="276" Position="33.9272,19.8015,6.8303" Rotation="5.4953" Scale="1,1,1" Type="MarSaraGroundProps">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="670" Position="61.5,127.5,12.7426" Rotation="4.2993" Scale="0.9472,0.9472,0.9472" Type="MarSaraTree">
+    <ObjectDoodad Id="670" Position="61.5,127.5,12.7517" Rotation="4.2993" Scale="0.9472,0.9472,0.9472" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="757" Position="58.7976,104.181,4.119" Rotation="4.717" Scale="0.7998,0.7998,0.7998" Type="BraxisAlphaBarrels">
@@ -3004,7 +3004,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="254" Variation="4" Position="135.5,88.5,14.8234" Rotation="5.876" Scale="1.024,1.024,1.024" Type="MarSaraTree">
+    <ObjectDoodad Id="254" Variation="4" Position="135.5,88.5,14.8237" Rotation="5.876" Scale="1.024,1.024,1.024" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1267" Variation="2" Position="60.5283,16.1296,-3.1875" Rotation="6.0456" Scale="0.8007,0.8007,0.8007" Type="MarSaraTreeDead">
@@ -3138,7 +3138,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="251" Position="135.5,84.5,14.8232" Rotation="1.3" Scale="0.9587,0.9587,0.9587" Type="MarSaraTree">
+    <ObjectDoodad Id="251" Position="135.5,84.5,16.8366" Rotation="1.3" Scale="0.9587,0.9587,0.9587" Type="MarSaraTree">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1270" Variation="1" Position="94.5,23.5,4.8654" Rotation="1.6896" Scale="1.1762,1.1762,1.1762" Type="Rock">
@@ -3449,7 +3449,7 @@
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="443642747" Variation="5" Position="65.5,120.5,12.2504" Rotation="4.2844" Scale="1.0205,1.0205,1.0205" Type="MarSaraTree">
+    <ObjectDoodad Id="443642747" Variation="5" Position="65.5,121.5,12.0168" Rotation="4.2844" Scale="1.0205,1.0205,1.0205" Type="MarSaraTree">
         <Flag Index="HeightOffset" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="74" Variation="3" Position="31.5893,63.656,6.8522" Rotation="6.2653" Scale="1.0388,1.0388,1.0388" Type="MarSaraTree">
@@ -4005,7 +4005,7 @@
         <CameraValue Index="FocalDepth" Value="8"/>
         <CameraValue Index="FalloffEnd" Value="8"/>
     </ObjectCamera>
-    <ObjectUnit Id="1343" Position="95.4975,82.5742,0" Rotation="0.136" Scale="1,1,1" UnitType="PalletMinerals"/>
+    <ObjectUnit Id="1343" Position="95.4616,77.1198,0" Rotation="0.136" Scale="1,1,1" UnitType="PalletMinerals"/>
     <ObjectUnit Id="409" Position="36.6718,99.5605,0" Rotation="5.3813" Scale="1,1,1" UnitType="Marine" Player="2">
         <AIRebuild Index="0" Value="0"/>
         <AIRebuild Index="1" Value="0"/>
@@ -4029,7 +4029,11 @@
         <AIRebuild Index="4" Value="0"/>
         <AIFlag Index="IsUseable" Value="0"/>
     </ObjectUnit>
-    <ObjectUnit Id="2015445227" Position="50.7697,99.89,0" Rotation="1.0944" Scale="1,1,1" UnitType="ScienceVessel" Player="2"/>
+    <ObjectUnit Id="2015445227" Position="50.7697,99.89,0" Rotation="1.0944" Scale="1,1,1" UnitType="ScienceVessel" Player="2">
+        <AIActive Index="1" Value="0"/>
+        <AIActive Index="2" Value="0"/>
+        <AIActive Index="3" Value="0"/>
+    </ObjectUnit>
     <ObjectUnit Id="1372595947" Position="114,107,0.0175" Rotation="3.326" Scale="1,1,1" UnitType="MissileTurret" Player="5">
         <Flag Index="HeightOffset" Value="1"/>
     </ObjectUnit>
@@ -4285,8 +4289,8 @@
         <AIFlag Index="IsUseable" Value="0"/>
     </ObjectUnit>
     <ObjectUnit Id="157" Position="44,26,0" Rotation="5.4975" Scale="1,1,1" UnitType="TechLab" Player="4"/>
-    <ObjectUnit Id="1342" Position="84.5781,82.9672,0" Rotation="0.9387" Scale="1,1,1" UnitType="PalletMinerals"/>
-    <ObjectUnit Id="706878837" Position="83.5278,81.2514,0" Rotation="1.3432" Scale="1,1,1" UnitType="PalletGas"/>
+    <ObjectUnit Id="1342" Position="84.5085,83.4831,0" Rotation="0.9387" Scale="1,1,1" UnitType="PalletMinerals"/>
+    <ObjectUnit Id="706878837" Position="83.5278,80.2656,0" Rotation="1.3432" Scale="1,1,1" UnitType="PalletGas"/>
     <ObjectUnit Id="179" Position="44.2282,106.603,0" Rotation="6.1525" Scale="1,1,1" UnitType="SCV" Player="2">
         <AIRebuild Index="1" Value="0"/>
         <AIRebuild Index="2" Value="0"/>
@@ -4457,7 +4461,7 @@
         <AIActive Index="2" Value="0"/>
         <AIActive Index="3" Value="0"/>
     </ObjectUnit>
-    <ObjectUnit Id="1720161114" Position="113.0224,84.416,0" Rotation="4.1645" Scale="1,1,1" UnitType="PalletMinerals"/>
+    <ObjectUnit Id="1720161114" Position="114.4165,84.3925,0" Rotation="4.1645" Scale="1,1,1" UnitType="PalletMinerals"/>
     <ObjectUnit Id="1188" Position="38.4162,34.2768,0" Rotation="1.8818" Scale="1,1,1" UnitType="Marine" Player="4">
         <AIRebuild Index="1" Value="14"/>
         <AIRebuild Index="2" Value="14"/>
@@ -4696,7 +4700,7 @@
     <ObjectUnit Id="227" Position="50.2578,24.756,0" Rotation="3.8925" Scale="1,1,1" UnitType="TerranBuggy" Player="3">
         <Flag Index="ForcePlacement" Value="1"/>
     </ObjectUnit>
-    <ObjectUnit Id="1344" Position="98.3408,79.222,0" Rotation="4.1647" Scale="1,1,1" UnitType="PalletMinerals"/>
+    <ObjectUnit Id="1344" Position="99.4396,78.9113,0" Rotation="4.1647" Scale="1,1,1" UnitType="PalletMinerals"/>
     <ObjectUnit Id="519" Position="37.7258,90.4604,0" Rotation="0.0126" Scale="1,1,1" UnitType="Marine" Player="2">
         <AIRebuild Index="0" Value="0"/>
         <AIRebuild Index="1" Value="0"/>

@@ -3642,10 +3642,10 @@ bool gt_PatrolAttackWaves_Func (bool testConds, bool runActions) {
 
     // Automatic Variable Declarations
     // Variable Initialization
-    lv_intervalCasual = 450;
-    lv_intervalNormal = 390;
-    lv_intervalHard = 330;
-    lv_intervalBrutal = 270;
+    lv_intervalCasual = 480;
+    lv_intervalNormal = 420;
+    lv_intervalHard = 360;
+    lv_intervalBrutal = 300;
 
     // Conditions
     if (testConds) {
@@ -3876,7 +3876,7 @@ bool gt_CrippleWraiths_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((UnitGetType(EventUnitCreatedUnit()) == "Wraith"))) {
+        if (!((UnitGetType(EventUnit()) == "Wraith"))) {
             return false;
         }
     }
@@ -3893,7 +3893,7 @@ bool gt_CrippleWraiths_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void gt_CrippleWraiths_Init () {
     gt_CrippleWraiths = TriggerCreate("gt_CrippleWraiths_Func");
-    TriggerAddEventUnitCreated(gt_CrippleWraiths, null, null, null);
+    TriggerAddEventUnitTrainProgress(gt_CrippleWraiths, null, c_unitProgressStageComplete);
 }
 
 //--------------------------------------------------------------------------------------------------
