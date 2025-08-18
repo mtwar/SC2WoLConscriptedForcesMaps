@@ -49,6 +49,7 @@ Trigger/Name/187D63D8=SCV Tip Q
 Trigger/Name/195D2A34=Defeat
 Trigger/Name/1BF02890=Initialization
 Trigger/Name/20FBFA78=Hellion Attack
+Trigger/Name/21982AE6=Patrol Attack Waves
 Trigger/Name/24FECBB7=Dominion Attack Waves
 Trigger/Name/2B36265E=Init 03 Units
 Trigger/Name/2D617E95=Stat - Barracks Built

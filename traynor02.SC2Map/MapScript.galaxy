@@ -191,6 +191,7 @@ trigger gt_StartAI;
 trigger gt_StartUpgradesH;
 trigger gt_StartUpgradesI;
 trigger gt_DominionAttackWaves;
+trigger gt_PatrolAttackWaves;
 trigger gt_DominionRebelResponseWave;
 trigger gt_AttackWaveDivert;
 trigger gt_AIMinerals;
@@ -333,12 +334,14 @@ void gf_SetAttackWaveParameters () {
     // Automatic Variable Declarations
     // Implementation
     AIAttackWaveSetGatherPoint(gv_pLAYER_02_DOMINION, PointFromId(292));
+    AIAttackWaveSetGatherPoint(gv_pLAYER_05_PATROL, PointFromId(221800012));
     if ((UnitIsAlive(gv_medicBarracks) == true) && (UnitGetOwner(gv_medicBarracks) == gv_pLAYER_01_USER)) {
         AIAttackWaveSetTargetPoint(gv_pLAYER_02_DOMINION, UnitGetPosition(gv_medicBarracks));
     }
     else {
         AIAttackWaveSetTargetPlayer(gv_pLAYER_02_DOMINION, PlayerGroupSingle(gv_pLAYER_01_USER));
     }
+    AIAttackWaveSetTargetPlayer(gv_pLAYER_05_PATROL, PlayerGroupSingle(gv_pLAYER_01_USER));
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -410,6 +413,8 @@ bool gt_Init02Players_Func (bool testConds, bool runActions) {
     PlayerModifyPropertyInt(gv_pLAYER_02_DOMINION, c_playerPropVespene, c_playerPropOperSetTo, 5000);
     PlayerModifyPropertyInt(gv_pLAYER_04_REBELS, c_playerPropMinerals, c_playerPropOperSetTo, 5000);
     PlayerModifyPropertyInt(gv_pLAYER_04_REBELS, c_playerPropVespene, c_playerPropOperSetTo, 5000);
+    PlayerModifyPropertyInt(gv_pLAYER_05_PATROL, c_playerPropMinerals, c_playerPropOperSetTo, 5000);
+    PlayerModifyPropertyInt(gv_pLAYER_05_PATROL, c_playerPropVespene, c_playerPropOperSetTo, 5000);
     PlayerSetState(gv_pLAYER_03_COLONISTS, c_playerStateShowScore, false);
     PlayerSetState(gv_pLAYER_04_REBELS, c_playerStateShowScore, false);
     PlayerSetState(gv_pLAYER_05_PATROL, c_playerStateShowScore, false);
@@ -3469,6 +3474,7 @@ bool gt_StartAI_Func (bool testConds, bool runActions) {
 
     AICampaignStart(gv_pLAYER_02_DOMINION);
     AICampaignStart(gv_pLAYER_04_REBELS);
+    AICampaignStart(gv_pLAYER_05_PATROL);
     TriggerExecute(gt_DominionAttackWaves, true, false);
     return true;
 }
@@ -3501,6 +3507,9 @@ bool gt_StartUpgradesH_Func (bool testConds, bool runActions) {
 
     Wait(960.0, c_timeAI);
     TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranVehicleWeaponsLevel1", 1);
+    TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranShipWeaponsLevel1", 1);
+    TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranShipArmorsLevel1", 1);
+    TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "WraithCloak", 1);
     return true;
 }
 
@@ -3533,6 +3542,9 @@ bool gt_StartUpgradesI_Func (bool testConds, bool runActions) {
     Wait(960.0, c_timeAI);
     TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranVehicleArmorsLevel2", 1);
     TechTreeUpgradeAddLevel(gv_pLAYER_02_DOMINION, "TerranVehicleWeaponsLevel2", 1);
+    TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranShipWeaponsLevel2", 1);
+    TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "TerranVehicleArmorsLevel2", 1);
+    TechTreeUpgradeAddLevel(gv_pLAYER_05_PATROL, "WraithCloak", 1);
     return true;
 }
 
@@ -3595,6 +3607,46 @@ bool gt_DominionAttackWaves_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void gt_DominionAttackWaves_Init () {
     gt_DominionAttackWaves = TriggerCreate("gt_DominionAttackWaves_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Patrol Attack Waves
+//--------------------------------------------------------------------------------------------------
+bool gt_PatrolAttackWaves_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    gf_SetAttackWaveParameters();
+    AIAttackWaveAddUnits4(0, 1, 1, 1, "Wraith");
+    AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(360, 300, 240, 180), true);
+    gf_SetAttackWaveParameters();
+    AIAttackWaveAddUnits4(0, 1, 1, 2, "Wraith");
+    AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(360, 300, 240, 180), true);
+    gf_SetAttackWaveParameters();
+    AIAttackWaveAddUnits4(0, 1, 2, 2, "Wraith");
+    AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(360, 300, 240, 180), true);
+    while (true) {
+        gf_SetAttackWaveParameters();
+        AIAttackWaveAddUnits4(0, 1, 2, 3, "Wraith");
+        AIAttackWaveSend(gv_pLAYER_05_PATROL, libNtve_gf_DifficultyValueInt(360, 300, 240, 180), true);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_PatrolAttackWaves_Init () {
+    gt_PatrolAttackWaves = TriggerCreate("gt_PatrolAttackWaves_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -3718,6 +3770,7 @@ void gt_AIMinerals_Init () {
     gt_AIMinerals = TriggerCreate("gt_AIMinerals_Func");
     TriggerAddEventPlayerPropChange(gt_AIMinerals, gv_pLAYER_02_DOMINION, c_playerPropMinerals);
     TriggerAddEventPlayerPropChange(gt_AIMinerals, gv_pLAYER_04_REBELS, c_playerPropMinerals);
+    TriggerAddEventPlayerPropChange(gt_AIMinerals, gv_pLAYER_05_PATROL, c_playerPropMinerals);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -3746,6 +3799,7 @@ void gt_AIGas_Init () {
     gt_AIGas = TriggerCreate("gt_AIGas_Func");
     TriggerAddEventPlayerPropChange(gt_AIGas, gv_pLAYER_02_DOMINION, c_playerPropVespene);
     TriggerAddEventPlayerPropChange(gt_AIGas, gv_pLAYER_04_REBELS, c_playerPropVespene);
+    TriggerAddEventPlayerPropChange(gt_AIGas, gv_pLAYER_05_PATROL, c_playerPropVespene);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4691,6 +4745,14 @@ bool gt_ObjectiveDominionExcavationSiteCreate2_Func (bool testConds, bool runAct
         if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
             return false;
         }
+
+        if (!((UnitGetOwner(EventUnit()) == gv_pLAYER_05_PATROL))) {
+            return false;
+        }
+
+        if (!((UnitGetType(EventUnit()) == "Wraith"))) {
+            return false;
+        }
     }
 
     // Actions
@@ -4699,14 +4761,23 @@ bool gt_ObjectiveDominionExcavationSiteCreate2_Func (bool testConds, bool runAct
     }
 
     TriggerEnable(TriggerGetCurrent(), false);
+    libCamp_gf_SetAllSoundChannelVolumesCampaign(libNtve_ge_VolumeChannelMode_Speech);
+    libLbty_gf_PlayTransmissionCueSound(PlayerGroupAll());
+    Wait(1.0, c_timeReal);
+    SoundPlay(SoundLink("TRaynor02Swann00068", -1), PlayerGroupAll(), 100.0, 0.0);
+    libCamp_gf_SendTransmissionCampaign(null, SoundLink("TRaynor02_Swann_070", 0), c_transmissionDurationAdd, 0.0, true);
+    Wait(1.0, c_timeReal);
+    libCamp_gf_SendTransmissionCampaign(null, SoundLink("TRaynor02_Raynor_071", 0), c_transmissionDurationAdd, 0.0, true);
     libWCMI_gf_CreateObjectiveCampaign("TRaynor02_4");
-    Wait(libWCMI_gv_campaignObjectiveDelay, c_timeGame);
+    Wait(libWCMI_gv_campaignObjectiveDelay, c_timeReal);
+    libCamp_gf_SetAllSoundChannelVolumesCampaign(libNtve_ge_VolumeChannelMode_Game);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
 void gt_ObjectiveDominionExcavationSiteCreate2_Init () {
     gt_ObjectiveDominionExcavationSiteCreate2 = TriggerCreate("gt_ObjectiveDominionExcavationSiteCreate2_Func");
+    TriggerAddEventUnitRange(gt_ObjectiveDominionExcavationSiteCreate2, null, UnitFromId(18), 20.0, true);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4728,7 +4799,7 @@ bool gt_ObjectiveDominionExcavationSiteUpdate2_Func (bool testConds, bool runAct
 
     libWCMI_gf_DisplayMissionObjectiveRewardFloatingText(UnitGetPosition(EventUnit()), "TRaynor02_4");
     libWCMI_gf_ZS_SetMissionObjectiveState("TRaynor02_4", libWoLC_ge_MissionObjectiveState_Completed);
-    Wait(libWCMI_gv_campaignObjectiveDelay, c_timeGame);
+    Wait(libWCMI_gv_campaignObjectiveDelay, c_timeReal);
     return true;
 }
 
@@ -4756,10 +4827,10 @@ bool gt_ObjectiveDominionExcavationSiteComplete2_Func (bool testConds, bool runA
     }
 
     TriggerEnable(TriggerGetCurrent(), false);
-    Wait(60.0, c_timeGame);
+    TriggerExecute(gt_PatrolAttackWaves, true, false);
     VisRevealArea(gv_pLAYER_01_USER, RegionFromId(7), 8.0, false);
     libWCMI_gf_CreateObjectivePing(true, PointFromId(29417979), StringExternal("Param/Value/B633E6E5"));
-    TriggerExecute(gt_ObjectiveDominionExcavationSiteCreate2, true, true);
+    TriggerExecute(gt_ObjectiveDominionExcavationSiteCreate2, true, false);
     return true;
 }
 
@@ -5305,6 +5376,7 @@ void InitTriggers () {
     gt_StartUpgradesH_Init();
     gt_StartUpgradesI_Init();
     gt_DominionAttackWaves_Init();
+    gt_PatrolAttackWaves_Init();
     gt_DominionRebelResponseWave_Init();
     gt_AttackWaveDivert_Init();
     gt_AIMinerals_Init();

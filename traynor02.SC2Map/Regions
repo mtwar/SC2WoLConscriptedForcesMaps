@@ -532,7 +532,7 @@
     <region id="7">
         <name value="Starport Reveal"/>
         <shape type="circle">
-            <center value="117.2507,108.0422"/>
+            <center value="124.1945,115.8947"/>
             <radius value="3.316"/>
         </shape>
     </region>

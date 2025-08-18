@@ -13,6 +13,8 @@
 <Achievement id="TRaynor02_3"/>
 <Actor id="SYSTEM_ActorConfig"/>
 <Actor id="LightOmniCyan"/>
+<Actor id="BattleStation_CliffTower" Variations="1"/>
+<Actor id="JarbanMinor_MiningSupplies" Variations="3"/>
 <Actor id="PathingBlocker1x1Doodad"/>
 <Actor id="AvernusBarrier" Variations="3,4"/>
 <Actor id="BirdsTarsonis"/>
@@ -31,6 +33,9 @@
 <Actor id="Garage" Variations="1"/>
 <Actor id="GarageLarge" Variations="1"/>
 <Actor id="GasStationAngled"/>
+<Actor id="HighYieldConveyorBelt" Variations="0"/>
+<Actor id="HighYieldStorage" Variations="0"/>
+<Actor id="HighYieldMineralCart" Variations="0"/>
 <Actor id="MammothFossils" Variations="0"/>
 <Actor id="MarSaraBones" Variations="0,2,4"/>
 <Actor id="MarSaraBridgeDestroyed"/>
@@ -50,7 +55,7 @@
 <Actor id="MarSaraTunnel"/>
 <Actor id="MineralCart" Variations="3"/>
 <Actor id="MiningBot"/>
-<Actor id="MiningBotWrecked" Variations="0"/>
+<Actor id="MiningBotWrecked" Variations="0,1"/>
 <Actor id="Outhouse" Variations="1"/>
 <Actor id="PipesCap" Variations="0"/>
 <Actor id="PipesCorner" Variations="3"/>
@@ -74,6 +79,8 @@
 <Actor id="SpacePlatformCautionLights" Variations="1"/>
 <Actor id="SpacePlatformSignDestructible" Variations="1"/>
 <Actor id="SpacePlatformSignTowerLarge" Variations="0,1"/>
+<Actor id="SpacePlatformTower" Variations="1"/>
+<Actor id="SupplyTanks"/>
 <Actor id="TRaynor02Crane" Variations="0,2"/>
 <Actor id="TRaynor02CranePart2x2" Variations="0,2,3,4"/>
 <Actor id="TRaynor02CranePart3x3" Variations="1,4,6,7,8,9"/>
@@ -81,10 +88,12 @@
 <Actor id="WaterTankTall" Variations="0,1"/>
 <Actor id="WindEmitterMedium"/>
 <Actor id="WindTurbine"/>
+<Actor id="CargoTruck" Variations="1"/>
 <Actor id="AnimalCorpse" Variations="1"/>
 <Actor id="PipesSmallCorner" Variations="0"/>
 <Actor id="PipesSmallShort"/>
 <Actor id="TRaynor02MineLift"/>
+<Actor id="TruckTanker"/>
 <Actor id="TRaynorDumpTruck"/>
 <Behavior id="Run"/>
 <Model id="TalkIcon"/>
@@ -126,6 +135,8 @@
 <Sound id="TRaynor02Raynor00065" Variations="0"/>
 <Sound id="TRaynor02Adjutant00066" Variations="0"/>
 <Sound id="TRaynor02Tychus00067" Variations="0"/>
+<Sound id="TRaynor02_Raynor_071" Variations="0"/>
+<Sound id="TRaynor02_Swann_070" Variations="0"/>
 <Soundtrack id="TRaynor02MusicMain"/>
 <Soundtrack id="TRaynor02MusicOutro"/>
 <Terrain id="MarSaraEx1"/>
@@ -135,6 +146,7 @@
 <Unit id="CommandCenter"/>
 <Unit id="SupplyDepot"/>
 <Unit id="Barracks"/>
+<Unit id="EngineeringBay"/>
 <Unit id="MissileTurret"/>
 <Unit id="Bunker"/>
 <Unit id="Factory"/>
@@ -145,10 +157,14 @@
 <Unit id="SCV"/>
 <Unit id="Marine"/>
 <Unit id="Hellion"/>
+<Unit id="RichMineralField" Variations="7,9"/>
+<Unit id="RichMineralField750" Variations="5"/>
+<Unit id="Rocks2x2NonConjoined"/>
 <Unit id="Beacon_Terran"/>
 <Unit id="Lyote"/>
 <Unit id="MineralField" Variations="0,1,2,3,4,5,6,7,8,9"/>
 <Unit id="VespeneGeyser"/>
+<Unit id="DestructibleGarage" Variations="0"/>
 <Unit id="PerditionTurretUnderground"/>
 <Unit id="WarPig"/>
 <Unit id="DevilDog"/>
@@ -163,4 +179,6 @@
 <Unit id="TerranBuggy"/>
 <Unit id="Food1000"/>
 <Unit id="Medic"/>
+<Unit id="ThornLizard"/>
+<Unit id="HydraliskL"/>
 </Preload>
