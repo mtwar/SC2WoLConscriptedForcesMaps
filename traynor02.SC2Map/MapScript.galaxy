@@ -3886,7 +3886,7 @@ bool gt_CrippleWraiths_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UnitSetPropertyFixed(EventUnit(), c_unitPropEnergy, 50.0);
+    UnitSetPropertyFixed(EventUnit(), c_unitPropEnergyMax, 50.0);
     return true;
 }
 
