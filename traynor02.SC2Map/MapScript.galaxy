@@ -600,6 +600,7 @@ bool gt_Init03Units_Func (bool testConds, bool runActions) {
         if (auto15C5507B_var == null) { break; }
         libNtve_gf_SendActorMessageToUnit(auto15C5507B_var, "StatusSet MarinePortrait 21");
     }
+    UnitSetPropertyFixed(UnitFromId(2015445227), c_unitPropEnergyMax, 60.0);
     return true;
 }
 
@@ -820,7 +821,6 @@ bool gt_StartGame_Func (bool testConds, bool runActions) {
     TriggerExecute(gt_ObjectiveDominionExcavationSiteCreate3, true, true);
     TriggerExecute(gt_ObjectiveDominionExcavationSiteComplete2, true, false);
     TechTreeAbilityAllow(gv_pLAYER_01_USER, AbilityCommand("BarracksAddOns", 1), true);
-    TechTreeAbilityAllow(gv_pLAYER_01_USER, AbilityCommand("TerranBuild", 12), false);
     return true;
 }
 

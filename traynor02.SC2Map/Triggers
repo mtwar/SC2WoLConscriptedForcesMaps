@@ -888,6 +888,7 @@
         <Action Type="FunctionCall" Id="4A3A6DF3"/>
         <Action Type="Comment" Id="5D9BB9E4"/>
         <Action Type="FunctionCall" Id="15C5507B"/>
+        <Action Type="FunctionCall" Id="45F65D36"/>
     </Element>
     <Element Type="FunctionCall" Id="FACADB5B">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="C4DC760C"/>
@@ -2324,6 +2325,26 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="8FF77F87"/>
         <Value>StatusSet MarinePortrait 21</Value>
         <ValueType Type="actormsg"/>
+    </Element>
+    <Element Type="FunctionCall" Id="45F65D36">
+        <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000087"/>
+        <Parameter Type="Param" Id="E9EA52BB"/>
+        <Parameter Type="Param" Id="DAE0F166"/>
+        <Parameter Type="Param" Id="52440BB2"/>
+    </Element>
+    <Element Type="Param" Id="E9EA52BB">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000151"/>
+        <ValueType Type="unit"/>
+        <ValueId Id="2015445227"/>
+    </Element>
+    <Element Type="Param" Id="DAE0F166">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000152"/>
+        <Preset Type="PresetValue" Library="Ntve" Id="1A3424FC"/>
+    </Element>
+    <Element Type="Param" Id="52440BB2">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000153"/>
+        <Value>60.0</Value>
+        <ValueType Type="fixed"/>
     </Element>
     <Element Type="Trigger" Id="127E799A">
         <Action Type="Comment" Id="298C30BF"/>
@@ -5514,7 +5535,6 @@
         <Action Type="FunctionCall" Id="6669F2DE"/>
         <Action Type="FunctionCall" Id="51E3BFEB"/>
         <Action Type="FunctionCall" Id="AEF662F5"/>
-        <Action Type="FunctionCall" Id="51E7D5E5"/>
     </Element>
     <Element Type="FunctionCall" Id="05F80735">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000137"/>
@@ -5776,26 +5796,6 @@
         <Preset Type="PresetValue" Library="Ntve" Id="00000106"/>
     </Element>
     <Element Type="Param" Id="3E0EC46D">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="BFF56EB0"/>
-        <Variable Type="Variable" Id="1E91CAF5"/>
-    </Element>
-    <Element Type="FunctionCall" Id="51E7D5E5">
-        <FunctionDef Type="FunctionDef" Library="Ntve" Id="0F7C3248"/>
-        <Parameter Type="Param" Id="4D12D8E5"/>
-        <Parameter Type="Param" Id="1C168702"/>
-        <Parameter Type="Param" Id="70DD673B"/>
-    </Element>
-    <Element Type="Param" Id="4D12D8E5">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="9B01128C"/>
-        <Value>TerranBuild</Value>
-        <ValueType Type="abilcmd"/>
-        <ValueId Id="12"/>
-    </Element>
-    <Element Type="Param" Id="1C168702">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="09B7BAEA"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000107"/>
-    </Element>
-    <Element Type="Param" Id="70DD673B">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="BFF56EB0"/>
         <Variable Type="Variable" Id="1E91CAF5"/>
     </Element>
