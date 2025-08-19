@@ -357,12 +357,33 @@
     </Element>
     <Element Type="Trigger" Id="D2EF9605">
         <Action Type="Comment" Id="88CE71B6"/>
+        <Action Type="FunctionCall" Id="87B0F699"/>
     </Element>
     <Element Type="Comment" Id="88CE71B6">
         <Comment>
             Tech restrictions are mainly handled by the &quot;Load campaign data&quot; action.
             You can apply further tech restrictions here if needed.
         </Comment>
+    </Element>
+    <Element Type="FunctionCall" Id="87B0F699">
+        <FunctionDef Type="FunctionDef" Library="Ntve" Id="51A273F5"/>
+        <Parameter Type="Param" Id="51146CE4"/>
+        <Parameter Type="Param" Id="FFA705DB"/>
+        <Parameter Type="Param" Id="9ECE08FA"/>
+    </Element>
+    <Element Type="Param" Id="51146CE4">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="B15D29C1"/>
+        <Variable Type="Variable" Id="1E91CAF5"/>
+    </Element>
+    <Element Type="Param" Id="FFA705DB">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="C26556EA"/>
+        <Preset Type="PresetValue" Library="Ntve" Id="00000106"/>
+    </Element>
+    <Element Type="Param" Id="9ECE08FA">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="BC66D9AD"/>
+        <Value>BarracksReactor</Value>
+        <ValueType Type="gamelink"/>
+        <ValueGameType Type="Unit"/>
     </Element>
     <Element Type="Trigger" Id="656C69BE">
         <Action Type="Comment" Id="022DAF44"/>
