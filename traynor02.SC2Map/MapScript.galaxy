@@ -227,7 +227,6 @@ trigger gt_ObjectiveRebelsDiscover;
 trigger gt_ObjectiveRebelsComplete;
 trigger gt_ObjectiveRebelsFailed;
 trigger gt_ObjectiveDominionExcavationSiteCreate;
-trigger gt_ObjectiveDominionExcavationSiteUpdate;
 trigger gt_ObjectiveDominionExcavationSiteComplete;
 trigger gt_ObjectiveDominionExcavationSiteCreate2;
 trigger gt_ObjectiveDominionExcavationSiteUpdate2;
@@ -3885,7 +3884,14 @@ bool gt_CrippleWraiths_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UnitSetPropertyFixed(EventUnitCreatedUnit(), c_unitPropEnergyMax, 50.0);
+    if ((PlayerDifficulty(EventPlayer()) == 3)) {
+        UnitSetPropertyFixed(EventUnitCreatedUnit(), c_unitPropEnergyMax, 35.0);
+    }
+
+    if ((PlayerDifficulty(EventPlayer()) == 4)) {
+        UnitSetPropertyFixed(EventUnitCreatedUnit(), c_unitPropEnergyMax, 40.0);
+    }
+
     return true;
 }
 
@@ -4715,33 +4721,8 @@ bool gt_ObjectiveDominionExcavationSiteCreate_Func (bool testConds, bool runActi
         if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
             return false;
         }
-    }
 
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    TriggerEnable(TriggerGetCurrent(), false);
-    libWCMI_gf_CreateObjectiveCampaign("TRaynor02_3");
-    libWCMI_gf_HideObjectiveCampaign("TRaynor02_3");
-    Wait(libWCMI_gv_campaignObjectiveDelay, c_timeGame);
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void gt_ObjectiveDominionExcavationSiteCreate_Init () {
-    gt_ObjectiveDominionExcavationSiteCreate = TriggerCreate("gt_ObjectiveDominionExcavationSiteCreate_Func");
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: Objective Excavation Site Update
-//--------------------------------------------------------------------------------------------------
-bool gt_ObjectiveDominionExcavationSiteUpdate_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Conditions
-    if (testConds) {
-        if (!((gv_gameOver == false))) {
+        if (!((libNtve_gf_UnitIsVisibleToPlayer(UnitFromId(106265592), gv_pLAYER_01_USER) == true))) {
             return false;
         }
     }
@@ -4751,16 +4732,15 @@ bool gt_ObjectiveDominionExcavationSiteUpdate_Func (bool testConds, bool runActi
         return true;
     }
 
-    libWCMI_gf_DisplayMissionObjectiveRewardFloatingText(UnitGetPosition(EventUnit()), "TRaynor02_3");
-    UnitKill(EventUnit());
-    TriggerExecute(gt_ObjectiveDominionExcavationSiteComplete, true, false);
+    TriggerEnable(TriggerGetCurrent(), false);
+    libWCMI_gf_CreateObjectiveCampaign("TRaynor02_3");
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void gt_ObjectiveDominionExcavationSiteUpdate_Init () {
-    gt_ObjectiveDominionExcavationSiteUpdate = TriggerCreate("gt_ObjectiveDominionExcavationSiteUpdate_Func");
-    TriggerAddEventUnitAbility(gt_ObjectiveDominionExcavationSiteUpdate, null, AbilityCommand("Pickup", 0), c_unitAbilStageExecute, false);
+void gt_ObjectiveDominionExcavationSiteCreate_Init () {
+    gt_ObjectiveDominionExcavationSiteCreate = TriggerCreate("gt_ObjectiveDominionExcavationSiteCreate_Func");
+    TriggerAddEventTimePeriodic(gt_ObjectiveDominionExcavationSiteCreate, 0.5, c_timeGame);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4773,6 +4753,10 @@ bool gt_ObjectiveDominionExcavationSiteComplete_Func (bool testConds, bool runAc
         if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
             return false;
         }
+
+        if (!((gv_gameOver == false))) {
+            return false;
+        }
     }
 
     // Actions
@@ -4782,13 +4766,15 @@ bool gt_ObjectiveDominionExcavationSiteComplete_Func (bool testConds, bool runAc
 
     TriggerEnable(TriggerGetCurrent(), false);
     libWCMI_gf_ZS_SetMissionObjectiveState("TRaynor02_3", libWoLC_ge_MissionObjectiveState_Completed);
-    Wait(libWCMI_gv_campaignObjectiveDelay, c_timeGame);
+    libWCMI_gf_DisplayMissionObjectiveRewardFloatingText(UnitGetPosition(EventUnit()), "TRaynor02_3");
+    UnitKill(EventUnit());
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
 void gt_ObjectiveDominionExcavationSiteComplete_Init () {
     gt_ObjectiveDominionExcavationSiteComplete = TriggerCreate("gt_ObjectiveDominionExcavationSiteComplete_Func");
+    TriggerAddEventUnitAbility(gt_ObjectiveDominionExcavationSiteComplete, null, AbilityCommand("Pickup", 0), c_unitAbilStageExecute, false);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -5562,7 +5548,6 @@ void InitTriggers () {
     gt_ObjectiveRebelsComplete_Init();
     gt_ObjectiveRebelsFailed_Init();
     gt_ObjectiveDominionExcavationSiteCreate_Init();
-    gt_ObjectiveDominionExcavationSiteUpdate_Init();
     gt_ObjectiveDominionExcavationSiteComplete_Init();
     gt_ObjectiveDominionExcavationSiteCreate2_Init();
     gt_ObjectiveDominionExcavationSiteUpdate2_Init();

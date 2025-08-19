@@ -149,7 +149,6 @@ Trigger/Name/EC9D24AA=Mine Guards Defeated
 Trigger/Name/ECDA3AE1=Objective Dominion Starport Create
 Trigger/Name/F152675B=Build Marines and SCVs Q
 Trigger/Name/F289CFD7=Start Upgrades H
-Trigger/Name/F2DFF242=Objective Excavation Site Update
 Trigger/Name/F320050B=Dominion Attacker Squads
 Trigger/Name/F5CB1395=Objective Excavation Site Create
 Trigger/Name/F5D6E3F1=Objective Kill the Hydralisk? Create

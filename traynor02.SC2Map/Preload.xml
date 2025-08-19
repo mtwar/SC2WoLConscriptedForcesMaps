@@ -14,7 +14,8 @@
 <Actor id="SYSTEM_ActorConfig"/>
 <Actor id="LightOmniCyan"/>
 <Actor id="BattleStation_CliffTower" Variations="1"/>
-<Actor id="JarbanMinor_MiningSupplies" Variations="3"/>
+<Actor id="JarbanMinor_CranePart" Variations="6"/>
+<Actor id="JarbanMinor_MiningSupplies" Variations="1,3"/>
 <Actor id="PathingBlocker1x1Doodad"/>
 <Actor id="AvernusBarrier" Variations="3,4"/>
 <Actor id="BirdsTarsonis"/>
@@ -88,6 +89,7 @@
 <Actor id="WaterTankTall" Variations="0,1"/>
 <Actor id="WindEmitterMedium"/>
 <Actor id="WindTurbine"/>
+<Actor id="WreckedMule" Variations="1"/>
 <Actor id="CargoTruck" Variations="1"/>
 <Actor id="AnimalCorpse" Variations="1"/>
 <Actor id="PipesSmallCorner" Variations="0"/>
