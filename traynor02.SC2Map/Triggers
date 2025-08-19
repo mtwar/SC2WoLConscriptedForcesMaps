@@ -135,7 +135,6 @@
         <Action Type="FunctionCall" Id="A8515DB2"/>
         <Action Type="Comment" Id="7502E7C5"/>
         <Action Type="FunctionCall" Id="01A99219"/>
-        <Action Type="FunctionCall" Id="183811A4"/>
     </Element>
     <Element Type="FunctionCall" Id="41F4AC3B">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000120"/>
@@ -336,54 +335,14 @@
         <ValueType Type="trigger"/>
         <ValueElement Type="Trigger" Id="00CF337F"/>
     </Element>
-    <Element Type="FunctionCall" Id="183811A4">
-        <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000116"/>
-        <Parameter Type="Param" Id="B861E62A"/>
-        <Parameter Type="Param" Id="A05DB2E9"/>
-        <Parameter Type="Param" Id="09FFFFF8"/>
-    </Element>
-    <Element Type="Param" Id="B861E62A">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000183"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000065"/>
-    </Element>
-    <Element Type="Param" Id="A05DB2E9">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000184"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000068"/>
-    </Element>
-    <Element Type="Param" Id="09FFFFF8">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000182"/>
-        <ValueType Type="trigger"/>
-        <ValueElement Type="Trigger" Library="DE1190BD" Id="1190B013"/>
-    </Element>
     <Element Type="Trigger" Id="D2EF9605">
         <Action Type="Comment" Id="88CE71B6"/>
-        <Action Type="FunctionCall" Id="87B0F699"/>
     </Element>
     <Element Type="Comment" Id="88CE71B6">
         <Comment>
             Tech restrictions are mainly handled by the &quot;Load campaign data&quot; action.
             You can apply further tech restrictions here if needed.
         </Comment>
-    </Element>
-    <Element Type="FunctionCall" Id="87B0F699">
-        <FunctionDef Type="FunctionDef" Library="Ntve" Id="51A273F5"/>
-        <Parameter Type="Param" Id="51146CE4"/>
-        <Parameter Type="Param" Id="FFA705DB"/>
-        <Parameter Type="Param" Id="9ECE08FA"/>
-    </Element>
-    <Element Type="Param" Id="51146CE4">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="B15D29C1"/>
-        <Variable Type="Variable" Id="1E91CAF5"/>
-    </Element>
-    <Element Type="Param" Id="FFA705DB">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="C26556EA"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000106"/>
-    </Element>
-    <Element Type="Param" Id="9ECE08FA">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="BC66D9AD"/>
-        <Value>BarracksReactor</Value>
-        <ValueType Type="gamelink"/>
-        <ValueGameType Type="Unit"/>
     </Element>
     <Element Type="Trigger" Id="656C69BE">
         <Action Type="Comment" Id="022DAF44"/>
@@ -5552,9 +5511,10 @@
         <Action Type="FunctionCall" Id="518CD2BE"/>
         <Action Type="FunctionCall" Id="2DD7033E"/>
         <Action Type="FunctionCall" Id="9D2595B5"/>
-        <Action Type="FunctionCall" Id="AD97A85B"/>
         <Action Type="FunctionCall" Id="6669F2DE"/>
         <Action Type="FunctionCall" Id="51E3BFEB"/>
+        <Action Type="FunctionCall" Id="AEF662F5"/>
+        <Action Type="FunctionCall" Id="51E7D5E5"/>
     </Element>
     <Element Type="FunctionCall" Id="05F80735">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000137"/>
@@ -5761,25 +5721,6 @@
         <ValueType Type="trigger"/>
         <ValueElement Type="Trigger" Id="F152675B"/>
     </Element>
-    <Element Type="FunctionCall" Id="AD97A85B">
-        <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000116"/>
-        <Parameter Type="Param" Id="62E0294B"/>
-        <Parameter Type="Param" Id="6D483709"/>
-        <Parameter Type="Param" Id="9089BEA7"/>
-    </Element>
-    <Element Type="Param" Id="62E0294B">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000183"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000065"/>
-    </Element>
-    <Element Type="Param" Id="6D483709">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000184"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000067"/>
-    </Element>
-    <Element Type="Param" Id="9089BEA7">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000182"/>
-        <ValueType Type="trigger"/>
-        <ValueElement Type="Trigger" Id="F5CB1395"/>
-    </Element>
     <Element Type="FunctionCall" Id="6669F2DE">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000116"/>
         <Parameter Type="Param" Id="BC66AA7A"/>
@@ -5817,6 +5758,46 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000182"/>
         <ValueType Type="trigger"/>
         <ValueElement Type="Trigger" Id="BEDF7758"/>
+    </Element>
+    <Element Type="FunctionCall" Id="AEF662F5">
+        <FunctionDef Type="FunctionDef" Library="Ntve" Id="0F7C3248"/>
+        <Parameter Type="Param" Id="A4F048AF"/>
+        <Parameter Type="Param" Id="2D981E87"/>
+        <Parameter Type="Param" Id="3E0EC46D"/>
+    </Element>
+    <Element Type="Param" Id="A4F048AF">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="9B01128C"/>
+        <Value>BarracksAddOns</Value>
+        <ValueType Type="abilcmd"/>
+        <ValueId Id="1"/>
+    </Element>
+    <Element Type="Param" Id="2D981E87">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="09B7BAEA"/>
+        <Preset Type="PresetValue" Library="Ntve" Id="00000106"/>
+    </Element>
+    <Element Type="Param" Id="3E0EC46D">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="BFF56EB0"/>
+        <Variable Type="Variable" Id="1E91CAF5"/>
+    </Element>
+    <Element Type="FunctionCall" Id="51E7D5E5">
+        <FunctionDef Type="FunctionDef" Library="Ntve" Id="0F7C3248"/>
+        <Parameter Type="Param" Id="4D12D8E5"/>
+        <Parameter Type="Param" Id="1C168702"/>
+        <Parameter Type="Param" Id="70DD673B"/>
+    </Element>
+    <Element Type="Param" Id="4D12D8E5">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="9B01128C"/>
+        <Value>TerranBuild</Value>
+        <ValueType Type="abilcmd"/>
+        <ValueId Id="12"/>
+    </Element>
+    <Element Type="Param" Id="1C168702">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="09B7BAEA"/>
+        <Preset Type="PresetValue" Library="Ntve" Id="00000107"/>
+    </Element>
+    <Element Type="Param" Id="70DD673B">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="BFF56EB0"/>
+        <Variable Type="Variable" Id="1E91CAF5"/>
     </Element>
     <Element Type="Trigger" Id="4F53520D">
         <Event Type="FunctionCall" Id="9883B4B2"/>

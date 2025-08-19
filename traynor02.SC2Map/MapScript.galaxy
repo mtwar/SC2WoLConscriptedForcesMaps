@@ -370,7 +370,6 @@ bool gt_Initialization_Func (bool testConds, bool runActions) {
     TriggerExecute(gt_Init07Help, true, true);
     libWoLC_gf_RegisterFootageRecording(gt_BriefingQ);
     TriggerExecute(gt_IntroSequence, true, false);
-    TriggerExecute(libDE1190BD_gt_RunAllCustomAI, true, false);
     return true;
 }
 
@@ -385,12 +384,6 @@ void gt_Initialization_Init () {
 //--------------------------------------------------------------------------------------------------
 bool gt_Init01Technology_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    TechTreeUnitAllow(gv_pLAYER_01_USER, "BarracksReactor", true);
     return true;
 }
 
@@ -824,9 +817,10 @@ bool gt_StartGame_Func (bool testConds, bool runActions) {
     Wait(2.0, c_timeReal);
     TriggerExecute(gt_ShowTipsQ, true, false);
     TriggerExecute(gt_BuildMarinesandSCVsQ, true, true);
-    TriggerExecute(gt_ObjectiveDominionExcavationSiteCreate, true, true);
     TriggerExecute(gt_ObjectiveDominionExcavationSiteCreate3, true, true);
     TriggerExecute(gt_ObjectiveDominionExcavationSiteComplete2, true, false);
+    TechTreeAbilityAllow(gv_pLAYER_01_USER, AbilityCommand("BarracksAddOns", 1), true);
+    TechTreeAbilityAllow(gv_pLAYER_01_USER, AbilityCommand("TerranBuild", 12), false);
     return true;
 }
 
